@@ -1,0 +1,93 @@
+$width: 35vw;
+
+@media screen and (max-width: $bp-l) {
+  .sidenav {
+    transform: translateX(-$width);
+    height: 100%; /* 100% Full-height */
+    width: $width; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 6; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: $menu; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+  }
+
+  @media screen and (max-width: 650px) {
+    .sidenav {
+      width: 45vw;
+      transform: translateX(-45vw);
+    }
+  }
+  @media screen and (max-width: 550px) {
+    .sidenav {
+      width: 55vw;
+      transform: translateX(-55vw);
+    }
+  }
+  @media screen and (max-width: 400px) {
+    .sidenav {
+      width: 85vw;
+      transform: translateX(-85vw);
+    }
+  }
+  .sidenav-open {
+    #sidenav {
+      transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+      transform: translateX(0);
+    }
+  }
+
+  .menu {
+    margin-top: 3rem;
+  }
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    padding: 1rem 1.2rem;
+    border-top: 1px solid white;
+    // text-align: right;
+    color: white;
+    display: block;
+    transition: 0.3s;
+  }
+
+  .sidenav li {
+    width: 100%;
+  }
+
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: $blue;
+    background-color: $mask;
+  }
+
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+    transition: margin-left 0.5s;
+  }
+
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {
+      padding-top: 15px;
+    }
+    .sidenav a {
+      font-size: 18px;
+    }
+  }
+}

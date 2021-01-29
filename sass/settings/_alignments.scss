@@ -1,0 +1,42 @@
+$padding: 4rem 6vw;
+$wrap-width-large: 1250px;
+$wrap-width-small: 800px;
+
+$bp-xl: 1200px;
+$bp-l: 900px;
+$bp-m: 720px;
+$bp-s: 500px;
+
+section {
+  padding: $padding;
+}
+
+header {
+  padding: 10px 6vw;
+}
+
+@media screen and (max-width: $bp-xl) {
+  section {
+    height: 100%;
+    padding: 2rem 4vw;
+  }
+  header {
+    padding: 10px 4vw;
+  }
+}
+@media screen and (max-width: $bp-m) {
+  section {
+    padding: 2rem 2rem;
+  }
+  header {
+    padding: 10px 2rem;
+  }
+}
+@media screen and (max-width: $bp-s) {
+  section {
+    padding: 4rem 1rem;
+  }
+  header {
+    padding: 10px 1rem;
+  }
+}

@@ -1,0 +1,40 @@
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+  background-color: $blue;
+  color: white;
+}
+
+.btn-info {
+  font-size: 0.9em;
+  padding: 10px 15px;
+  border: 2px solid white;
+  i {
+    margin-left: 3px;
+    transition: 0.5s;
+  }
+  &:hover {
+    background-color: #6cb1da;
+    i {
+      margin-left: 10px;
+    }
+  }
+}
+
+.btn-submit {
+  float: left;
+  width: 100%;
+  max-width: 150px;
+  padding: 13px;
+  i {
+    margin-left: 3px;
+    transition: 0.5s;
+  }
+  &:hover {
+    background-color: #6cb1da;
+    i {
+      margin-left: 10px;
+    }
+  }
+}
