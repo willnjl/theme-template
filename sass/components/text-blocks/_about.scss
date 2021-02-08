@@ -1,0 +1,23 @@
+.text-block-about {
+  .title-block {
+    display: flex;
+    align-items: center;
+    h3 {
+      margin-left: 2rem;
+      color: $blue-light;
+    }
+    .icon {
+      position: relative;
+      display: block;
+      height: 125px;
+      width: 125px;
+      .bg-img {
+        z-index: unset;
+      }
+    }
+  }
+
+  .body {
+    margin-top: 2rem;
+  }
+}

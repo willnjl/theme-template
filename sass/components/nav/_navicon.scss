@@ -4,11 +4,8 @@
 ------------------------------------------------
 */
 
-#navicon {
-}
-
 @media screen and (min-width: $bp-l) {
-  #navicon {
+  #menu-toggle {
     display: none;
   }
 }

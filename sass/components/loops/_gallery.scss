@@ -1,0 +1,25 @@
+.loop-gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: $blue;
+  h3 {
+    margin-bottom: 2rem;
+  }
+
+  .row {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .chocolat-image {
+    width: 225px;
+    margin: 2rem;
+
+    img {
+      border: 1px solid white;
+      &:hover {
+        border: 1px solid $text-grey;
+      }
+    }
+  }
+}

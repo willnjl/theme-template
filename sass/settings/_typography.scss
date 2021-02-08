@@ -1,24 +1,43 @@
-@import url("https://use.typekit.net/avp5hnx.css");
+@font-face {
+  font-family: "Graphik";
+  font-weight: normal;
+  src: url("fonts/commercial-type-2007-BJTQBX-desktop/graphik/Graphik-Regular.otf")
+    format("opentype");
+}
+@font-face {
+  font-family: "Graphik";
+  font-weight: bold;
+  src: url("fonts/commercial-type-2007-BJTQBX-desktop/graphik/Graphik-Semibold.otf")
+    format("opentype");
+}
+@font-face {
+  font-family: "Compacta";
+  font-weight: normal;
+  src: url("fonts/Compacta Regular/ITC - CompactaPro-Regular.otf")
+    format("opentype");
+}
+
+$font-primary: "Graphik"; //, Helvetica, arial, sans-serif;
+$font-secondary: "Compacta"; //, Helvetica, arial, sans-serif;
 
 $line-height: 1.6rem;
 
-body,
-html {
-}
-
 body {
   color: #000e1e;
-  font-weight: 200;
-  font-family: neusa-next-std, sans-serif;
+  font-weight: 300;
+  font-family: $font-primary;
 }
 
 h1 {
-  font-size: 3.4rem;
+  font-family: $font-secondary;
+  line-height: 3.4rem;
+  font-size: 2.5rem;
   font-weight: 700;
 }
 
 h2 {
   font-size: 2.2rem;
+  font-weight: 600;
 }
 
 h3 {
@@ -28,10 +47,12 @@ h3 {
 
 h4 {
   font-size: 1.8rem;
+  font-weight: 600;
 }
 
 h5 {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
+  font-weight: 600;
 }
 
 p {

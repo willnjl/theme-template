@@ -22,3 +22,17 @@
     background-size: 100% 10px;
   }
 }
+
+.span-author {
+  color: $text-grey;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+}
+
+.open-quotes::before {
+  content: "“";
+}
+
+.close-quotes::after {
+  content: "”";
+}

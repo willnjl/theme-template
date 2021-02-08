@@ -1,0 +1,16 @@
+@import "homepage";
+@import "about";
+@import "testimonial";
+@import "case-studies";
+
+.text-block--services {
+  @extend .text-block--case-study;
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    color: $blue-light;
+    margin: 2rem 0;
+  }
+}
