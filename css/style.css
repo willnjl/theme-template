@@ -247,7 +247,7 @@ h1 {
 }
 
 h2 {
-	font-size: 2.2rem;
+	font-size: 2.5rem;
 	font-weight: 600;
 }
 
@@ -1084,8 +1084,8 @@ section {
 /* banners */
 .banner, .banner--small {
 	height: 100vh;
-	color: white;
 	min-height: 600px;
+	color: white;
 }
 
 .banner h1, .banner--small h1 {
@@ -1111,8 +1111,8 @@ section {
 
 .banner, .banner--small {
 	height: 100vh;
-	color: white;
 	min-height: 600px;
+	color: white;
 }
 
 .banner h1, .banner--small h1 {
@@ -1543,131 +1543,48 @@ footer .row .social-btns .btn-social {
 	}
 }
 
-.loop {
-	display: flex;
-	flex-direction: column;
+.panels {
+	padding: 0;
+	min-height: unset;
 }
 
-@supports (display: grid) {
-	.loop {
-		margin-top: 1rem;
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		grid-auto-rows: 150px;
-		gap: 1rem;
-	}
-}
-
-.loop li {
-	background-color: white;
-	display: flex;
-	position: relative;
-	color: #0074cd;
-}
-
-.loop li .thumb {
+.panels .row {
 	height: 100%;
-	width: 150px;
-	background-color: #ebc817;
-}
-
-.loop li hr {
-	border-top: 2px solid #fede38;
-	width: 45px;
-}
-
-.services .title-block {
-	background-color: #005392;
-	width: 100%;
-	padding: 1rem;
-	color: white;
-}
-
-.services .text-container {
-	padding: 1rem;
-	max-width: 400px;
-}
-
-@media screen and (max-width: 720px) {
-	.services .loop {
-		display: flex;
-		flex-direction: column;
-	}
-	.services .loop li {
-		flex: 1;
-		height: 150px;
-	}
-}
-
-.loop-case-studies .loop {
-	grid-auto-rows: 235px;
-}
-
-.loop-case-studies .loop li {
-	height: 235px;
-}
-
-.loop-case-studies .loop li .thumb {
-	width: 235px;
-	min-width: 235px;
-}
-
-.loop-case-studies .text-container {
-	padding: 2rem;
 	width: 100%;
 }
 
-.loop-case-studies .text-container hr {
-	margin: 1.2rem 0rem;
-}
-
-.loop-case-studies .text-container p {
-	color: #959595;
-}
-
-.loop-case-studies .text-container .span-author {
-	font-size: 0.8rem;
-	position: absolute;
-	bottom: 0;
-}
-
-@media screen and (max-width: 1200px) {
-	.loop-case-studies .loop {
-		display: flex;
-		flex-direction: column;
-	}
-	.loop-case-studies .loop li {
-		flex: 1;
-	}
-}
-
-.loop-gallery {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	color: #005392;
-}
-
-.loop-gallery h3 {
-	margin-bottom: 2rem;
-}
-
-.loop-gallery .row {
-	justify-content: center;
-	flex-wrap: wrap;
-}
-
-.loop-gallery .chocolat-image {
-	width: 225px;
-	margin: 2rem;
-}
-
-.loop-gallery .chocolat-image img {
+.panels .panel {
+	position: relative;
+	width: 100%;
+	height: 100%;
 	border: 1px solid white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
-.loop-gallery .chocolat-image img:hover {
-	border: 1px solid #959595;
+.panels .panel h2 {
+	text-transform: uppercase;
+	font-size: 3rem;
+	z-index: 1;
+}
+
+.panels .panel::after {
+	content: "";
+	background-color: black;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	opacity: 1;
+	transition: 1s;
+}
+
+.panels .panel:hover::after {
+	opacity: 0;
+	transform: scale(0.75);
+	transition: 0.3s;
 }
 
 /*# sourceMappingURL=style.css.map */
