@@ -1,0 +1,42 @@
+.wpcf7 {
+  .row {
+    margin: 10px;
+  }
+  div {
+    margin: 0;
+    padding: 0;
+  }
+
+  button {
+    margin-top: 2rem;
+    width: 175px;
+    margin-left: auto;
+    cursor: pointer;
+  }
+
+  .row {
+    .wpcf7-form-control-wrap {
+      margin: 0 5px;
+    }
+  }
+}
+
+input,
+textarea {
+  display: block;
+  border: none;
+  position: relative;
+  width: 100%;
+  padding: 10px;
+  font-size: 1.1rem;
+  font-weight: 200;
+}
+
+.textarea-16 {
+  padding: 0 15px;
+  display: block;
+}
+textarea {
+  width: 100%;
+  font-family: inherit;
+}

@@ -7,6 +7,7 @@ a.link {
   }
 }
 
+.btn-link,
 a.btn-link {
   position: relative;
   display: flex;
@@ -15,7 +16,6 @@ a.btn-link {
   padding: 15px 1.5rem;
   border-radius: 50px;
   color: $blue;
-  background-color: grey;
   border: 2px solid $blue;
   background-color: white;
 

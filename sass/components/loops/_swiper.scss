@@ -1,0 +1,52 @@
+.swiper-slide {
+  width: 300px;
+  p {
+    margin-top: 1rem;
+  }
+}
+
+.hover-card {
+  overflow: hidden;
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background-color: $blue;
+    opacity: 1;
+  }
+
+  .hover-card__link {
+    width: 100%;
+    color: white;
+    font-size: 1.2rem;
+    position: absolute;
+    display: inline-flex;
+    bottom: 10px;
+    left: 0;
+    z-index: 2;
+    opacity: 0;
+    padding: 0 15px;
+    &::after {
+      @extend .icon;
+      content: "";
+      background-image: url("./icons/arrow-blue.jpg");
+      margin-left: auto;
+    }
+  }
+
+  &:hover {
+    &:after {
+      height: 100%;
+      transition: 0.25s ease-out;
+    }
+
+    .hover-card__link {
+      opacity: 1;
+      transition: 0.5s;
+    }
+  }
+}

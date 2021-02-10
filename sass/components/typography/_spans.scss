@@ -36,3 +36,16 @@
 .close-quotes::after {
   content: "”";
 }
+
+.icon {
+  &:after {
+    content: "";
+    display: inline-block;
+    width: 27px;
+    height: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 0.2s;
+  }
+}

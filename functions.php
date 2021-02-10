@@ -140,15 +140,13 @@ add_action( 'widgets_init', 'fiteenten_widgets_init' );
  * Enqueue scripts and styles.
  */
 function fiteenten_scripts() {
-	wp_enqueue_style( 'swiper-style', get_template_directory_uri().'https://unpkg.com/swiper/swiper-bundle.min.css', array(), _S_VERSION );
+	wp_enqueue_style( 'swiper-style', 'https://unpkg.com/swiper/swiper-bundle.min.css', array(), _S_VERSION );
 	wp_enqueue_style( 'fiteenten-style', get_template_directory_uri().'/css/style.min.css', array(), _S_VERSION );
 	wp_style_add_data( 'fiteenten-style', 'rtl', 'replace' );
 
 	wp_enqueue_script( 'fiteenten-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
 	wp_enqueue_script( 'fiteenten-parallax', get_template_directory_uri() . '/js/parallax.min.js', array(), _S_VERSION, true );
-	wp_enqueue_script( 'fiteenten-swiper', get_template_directory_uri() . '/js/parallax.min.js', array(), _S_VERSION, true );
-	wp_enqueue_script( 'fiteenten-parallax', get_template_directory_uri() . '/js/parallax.min.js', array(), _S_VERSION, true );
-	wp_enqueue_script( 'fiteenten-parallax', get_template_directory_uri() . 'https://unpkg.com/swiper/swiper-bundle.min.js', array(), _S_VERSION, true );
+	wp_enqueue_script( 'fiteenten-swiper', 'https://unpkg.com/swiper/swiper-bundle.min.js', array(), _S_VERSION, false );
 	// wp_enqueue_script( 'fiteenten-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {

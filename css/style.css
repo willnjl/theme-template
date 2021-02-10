@@ -188,7 +188,7 @@ table {
 
 section,
 footer {
-	padding: 4rem 6vw;
+	padding: 6rem 6vw;
 }
 
 header {
@@ -1177,6 +1177,7 @@ a.link:hover {
 	color: #0126c9;
 }
 
+.btn-link,
 a.btn-link {
 	position: relative;
 	display: flex;
@@ -1185,11 +1186,11 @@ a.btn-link {
 	padding: 15px 1.5rem;
 	border-radius: 50px;
 	color: #0030ff;
-	background-color: grey;
 	border: 2px solid #0030ff;
 	background-color: white;
 }
 
+.btn-link:after,
 a.btn-link:after {
 	content: "";
 	display: inline-block;
@@ -1203,11 +1204,13 @@ a.btn-link:after {
 	transition: 0.2s;
 }
 
+.btn-link:hover,
 a.btn-link:hover {
 	border-color: #333;
 	color: #333;
 }
 
+.btn-link:hover::after,
 a.btn-link:hover::after {
 	transition: 0.2s;
 	margin-left: 1.5rem;
@@ -1253,6 +1256,47 @@ a.btn-link:hover::after {
 }
 
 /* forms */
+.wpcf7 .row {
+	margin: 10px;
+}
+
+.wpcf7 div {
+	margin: 0;
+	padding: 0;
+}
+
+.wpcf7 button {
+	margin-top: 2rem;
+	width: 175px;
+	margin-left: auto;
+	cursor: pointer;
+}
+
+.wpcf7 .row .wpcf7-form-control-wrap {
+	margin: 0 5px;
+}
+
+input,
+textarea {
+	display: block;
+	border: none;
+	position: relative;
+	width: 100%;
+	padding: 10px;
+	font-size: 1.1rem;
+	font-weight: 200;
+}
+
+.textarea-16 {
+	padding: 0 15px;
+	display: block;
+}
+
+textarea {
+	width: 100%;
+	font-family: inherit;
+}
+
 .checkers {
 	clear: both;
 	display: block;
@@ -1351,6 +1395,17 @@ footer .row .social-btns .btn-social {
 	content: "”";
 }
 
+.icon:after {
+	content: "";
+	display: inline-block;
+	width: 27px;
+	height: 20px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	transition: 0.2s;
+}
+
 .text-block__homepage p {
 	font-size: 1.2rem;
 	max-width: 700px;
@@ -1431,6 +1486,59 @@ footer .row .social-btns .btn-social {
 	.panels .row {
 		flex-direction: column;
 	}
+}
+
+.swiper-slide {
+	width: 300px;
+}
+
+.swiper-slide p {
+	margin-top: 1rem;
+}
+
+.hover-card {
+	overflow: hidden;
+	position: relative;
+}
+
+.hover-card::after {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 0%;
+	background-color: #0030ff;
+	opacity: 1;
+}
+
+.hover-card .hover-card__link {
+	width: 100%;
+	color: white;
+	font-size: 1.2rem;
+	position: absolute;
+	display: inline-flex;
+	bottom: 10px;
+	left: 0;
+	z-index: 2;
+	opacity: 0;
+	padding: 0 15px;
+}
+
+.hover-card .hover-card__link::after {
+	content: "";
+	background-image: url("./icons/arrow-blue.jpg");
+	margin-left: auto;
+}
+
+.hover-card:hover:after {
+	height: 100%;
+	transition: 0.25s ease-out;
+}
+
+.hover-card:hover .hover-card__link {
+	opacity: 1;
+	transition: 0.5s;
 }
 
 .loop-container {
