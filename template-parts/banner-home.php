@@ -11,7 +11,7 @@ alt="<?= $img['alt']; ?>"
 
 <?php if($heading) : ?>
     
-<div class="two-thirds">
+<div >
     <h1>
         <?= $heading ?>
     </h1>

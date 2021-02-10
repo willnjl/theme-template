@@ -1,12 +1,12 @@
-$blue: #005392;
-$blue-light: #0074cd;
+$blue: #0030ff;
+$blue-light: #0030ff;
 $blue-grey: #ebf1f6;
 $mask: #121212aa;
 $menu: #121212ee;
 
 $yellow: #ebc817;
 $yellow-house: #fcdd3d;
-$grey: #eeeeee;
+$grey: #f0f0f0;
 $text-grey: #959595;
 
 :root {
@@ -15,4 +15,8 @@ $text-grey: #959595;
 
 .white-bg {
   background-color: white;
+}
+
+.grey-bg {
+  background-color: $grey;
 }

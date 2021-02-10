@@ -20,6 +20,9 @@
 $font-primary: "Graphik"; //, Helvetica, arial, sans-serif;
 $font-secondary: "Compacta"; //, Helvetica, arial, sans-serif;
 
+$p-large: 1.2rem;
+$p-small: 0.9rem;
+
 $line-height: 1.6rem;
 
 body {
@@ -57,6 +60,9 @@ h5 {
 
 p {
   line-height: $line-height;
-  margin-bottom: 1rem;
   font-weight: 200;
+}
+
+strong {
+  font-weight: 600;
 }

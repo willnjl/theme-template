@@ -1,6 +1,5 @@
 section {
   overflow: hidden;
-
   position: relative;
 }
 
@@ -14,4 +13,16 @@ section {
   display: inline-block;
   flex-direction: column;
   width: 100%;
+}
+
+.grey-bg {
+  background: $grey;
+}
+.grey-bg--bottom {
+  background: white;
+  background: linear-gradient(0deg, $grey 50%, white 50%);
+}
+.grey-bg--top {
+  background: $grey;
+  background: linear-gradient(0deg, white 50%, $grey 50%);
 }

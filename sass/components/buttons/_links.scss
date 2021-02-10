@@ -1,3 +1,43 @@
+a.link {
+  color: $blue;
+  text-decoration: underline;
+}
+
+a.btn-link {
+  position: relative;
+  display: flex;
+  align-items: center;
+  max-width: 225px;
+  padding: 15px 1.5rem;
+  border-radius: 50px;
+  color: $blue;
+  background-color: grey;
+  border: 2px solid $blue;
+  background-color: white;
+
+  &:after {
+    content: "";
+    display: inline-block;
+    margin-left: 1.2rem;
+    width: 27px;
+    height: 20px;
+    background-image: url("./icons/arrow.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 0.2s;
+  }
+
+  &:hover {
+    border-color: #333;
+    color: #333;
+    &::after {
+      transition: 0.2s;
+      margin-left: 1.5rem;
+    }
+  }
+}
+
 .scroll-down {
   display: block;
   text-transform: uppercase;
