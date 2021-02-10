@@ -828,7 +828,7 @@ body.chocolat-open > .chocolat-image-wrapper {
 	margin-top: 0px;
 }
 
-@media only screen and (max-width: 940px) {
+@media only screen and (max-width: 900px) {
 	.two-cols .col,
 	.three-cols .col {
 		width: 100%;
@@ -1295,6 +1295,35 @@ textarea {
 textarea {
 	width: 100%;
 	font-family: inherit;
+}
+
+.form p {
+	font-size: 1.2rem;
+}
+
+.form li {
+	font-size: 1.6rem;
+	margin: 2rem 0;
+}
+
+@media screen and (max-width: 900px) {
+	.form .info {
+		margin-bottom: 2rem;
+	}
+	.form .info p {
+		margin-top: 5px;
+		padding: 0 10px;
+	}
+	.form .info ul {
+		margin: 2rem 0;
+		display: flex;
+		justify-content: space-evenly;
+		width: 100%;
+	}
+	.form .info ul li {
+		font-size: 1.2rem;
+		margin: 0;
+	}
 }
 
 .checkers {

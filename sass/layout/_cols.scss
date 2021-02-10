@@ -42,7 +42,7 @@
   margin-top: 0px;
 }
 
-@media only screen and (max-width: 940px) {
+@media only screen and (max-width: $bp-l) {
   .two-cols .col,
   .three-cols .col {
     width: 100%;
@@ -57,12 +57,12 @@
   }
 }
 
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: $bp-m) {
   .four-cols .col {
     width: 100%;
   }
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: $bp-s) {
   .col {
     width: 100%;
   }
