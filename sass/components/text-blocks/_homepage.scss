@@ -1,7 +1,7 @@
 .text-block__homepage {
   p {
     font-size: $p-large;
-    max-width: 650px;
+    max-width: 700px;
   }
 }
 
@@ -12,5 +12,14 @@
 
   a.btn-link {
     margin-left: auto;
+  }
+}
+
+@media screen and (max-width: $bp-m) {
+  .text-block__homepage--link {
+    p {
+      width: 100%;
+      margin-bottom: 2rem;
+    }
   }
 }

@@ -1,6 +1,10 @@
 a.link {
   color: $blue;
   text-decoration: underline;
+
+  &:hover {
+    color: $blue-darken;
+  }
 }
 
 a.btn-link {

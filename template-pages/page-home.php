@@ -22,6 +22,7 @@ get_header();
             <?php get_template_part( 'template-parts/section', 'trailer' ) ?>
             <?php get_template_part( 'template-parts/textblock', 'homepage--link' ) ?>
         </section>
+        <?php get_template_part( 'template-parts/loops', 'client--homepage' ) ?>
     </div>
 </main>
 

@@ -1,0 +1,36 @@
+.loop-container {
+  display: flex;
+  justify-content: center;
+}
+.loop-container--grid {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.client-logo {
+  margin: 10px;
+  max-width: 175px;
+}
+
+@supports (gap: 1) {
+  .loop-container--grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .client-logo {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: $bp-xl) {
+  .loop-container--grid {
+    justify-content: center;
+  }
+
+  .client-logo {
+    max-width: 125px;
+  }
+}

@@ -1,11 +1,18 @@
 $padding: 4rem 6vw;
 $wrap-width-large: 1250px;
-$wrap-width-small: 900px;
+$wrap-width-small: 1010px;
 
 $bp-xl: 1200px;
 $bp-l: 900px;
 $bp-m: 720px;
 $bp-s: 500px;
+
+.padding {
+  padding: 4rem 0;
+}
+.no-pad {
+  padding-top: 0;
+}
 
 section,
 footer {
@@ -28,6 +35,9 @@ header {
   }
 }
 @media screen and (max-width: $bp-m) {
+  .padding {
+    padding: 2rem 0;
+  }
   section,
   footer {
     padding: 2rem 2rem;
@@ -37,6 +47,9 @@ header {
   }
 }
 @media screen and (max-width: $bp-s) {
+  .padding {
+    padding: 2rem 0;
+  }
   section,
   footer {
     padding: 4rem 1rem;
