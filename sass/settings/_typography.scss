@@ -20,6 +20,7 @@
 $font-primary: "Graphik"; //, Helvetica, arial, sans-serif;
 $font-secondary: "Compacta"; //, Helvetica, arial, sans-serif;
 
+$p-xl: 1.6rem;
 $p-large: 1.2rem;
 $p-small: 0.9rem;
 
@@ -65,4 +66,18 @@ p {
 
 strong {
   font-weight: 600;
+}
+
+html {
+  font-size: 17px;
+}
+
+.p-l {
+  font-size: $p_large;
+}
+.p-xl {
+  font-size: $p_xl;
+}
+.p-s {
+  font-size: 0.75rem;
 }

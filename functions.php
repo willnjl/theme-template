@@ -145,6 +145,7 @@ function fiteenten_scripts() {
 	wp_style_add_data( 'fiteenten-style', 'rtl', 'replace' );
 
 	wp_enqueue_script( 'fiteenten-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
+	wp_enqueue_script( 'fiteenten-instabundle', get_template_directory_uri() . '/js/insta.bundle.js', array(), _S_VERSION, true );
 	wp_enqueue_script( 'fiteenten-parallax', get_template_directory_uri() . '/js/parallax.min.js', array(), _S_VERSION, true );
 	wp_enqueue_script( 'fiteenten-swiper', 'https://unpkg.com/swiper/swiper-bundle.min.js', array(), _S_VERSION, false );
 	// wp_enqueue_script( 'fiteenten-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );

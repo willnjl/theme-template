@@ -37,6 +37,12 @@
   content: "”";
 }
 
+.middot::after {
+  content: " \00B7";
+  margin: 0 1rem;
+  font-size: 2rem;
+}
+
 .icon {
   &:after {
     content: "";
