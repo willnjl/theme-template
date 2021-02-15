@@ -14,6 +14,13 @@
   max-width: 175px;
 }
 
+.info {
+  hr {
+    width: 50%;
+  }
+  height: 150px;
+  width: 215px;
+}
 @supports (gap: 1) {
   .loop-container--grid {
     display: flex;
@@ -32,7 +39,22 @@
     justify-content: center;
   }
 
+  .info {
+    width: 250px;
+    margin: 0 1rem;
+  }
+
   .client-logo {
     max-width: 125px;
+  }
+}
+@media screen and (max-width: $bp-m) {
+  .loop-container--grid {
+    justify-content: space-evenly;
+  }
+  .info {
+    width: 200px;
+    height: auto;
+    margin: 0 10px;
   }
 }

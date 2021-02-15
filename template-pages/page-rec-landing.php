@@ -15,7 +15,7 @@ get_header();
 <main id="main">
     <?php get_template_part( 'template-parts/banner', 'bannerless' ) ?>
     <div class="first">
-        <?php get_template_part( 'template-parts/section', 'panels--notcode' ) ?>
+        <?php get_template_part( 'template-parts/loops', 'keypoints' ) ?>
     </div>
         <section class="grey-bg--bottom">
             <?php get_template_part( 'template-parts/textblock', 'homepage' ) ?>

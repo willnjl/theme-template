@@ -1,7 +1,7 @@
 <section class="banner-less align-center">
     <div class="wrap-tight">
         <h1 class="p-xl two-thirds ">
-            Recruitment websites that accelerate candidate conversions, drive client connections and deliver an exceptional user experience for all.
+            <strong>Recruitment websites</strong> that accelerate candidate conversions, drive client connections and deliver an exceptional user experience for all.
         </h1>
     </div>
 </section>
@@ -14,8 +14,4 @@
             </div>
         </div>
  </div>
-</section>
-
-<section class="info grey-bg">
-
 </section>

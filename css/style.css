@@ -3827,6 +3827,15 @@ address.p-l {
 	max-width: 175px;
 }
 
+.info {
+	height: 150px;
+	width: 215px;
+}
+
+.info hr {
+	width: 50%;
+}
+
 @supports (gap: 1) {
 	.loop-container--grid {
 		display: flex;
@@ -3843,8 +3852,23 @@ address.p-l {
 	.loop-container--grid {
 		justify-content: center;
 	}
+	.info {
+		width: 250px;
+		margin: 0 1rem;
+	}
 	.client-logo {
 		max-width: 125px;
+	}
+}
+
+@media screen and (max-width: 720px) {
+	.loop-container--grid {
+		justify-content: space-evenly;
+	}
+	.info {
+		width: 200px;
+		height: auto;
+		margin: 0 10px;
 	}
 }
 
