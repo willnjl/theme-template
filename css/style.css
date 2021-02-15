@@ -3088,9 +3088,21 @@ section {
 	z-index: 1;
 }
 
+.grey-bg--bottom--qtr {
+	position: relative;
+	background: white;
+	background: linear-gradient(0deg, #f0f0f0 calc(25% + 4rem), white 75%);
+	z-index: 1;
+}
+
 .grey-bg--top {
 	background: #f0f0f0;
 	background: linear-gradient(0deg, white 50%, #f0f0f0 50%);
+}
+
+.grey-bg--top--qtr {
+	background: #f0f0f0;
+	background: linear-gradient(0deg, white 75%, #f0f0f0 25%);
 }
 
 .cf {
@@ -3815,6 +3827,24 @@ address.p-l {
 .hover-card:hover .hover-card__link {
 	opacity: 1;
 	transition: 0.5s;
+}
+
+.loop--two-col {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.loop--two-col li {
+	margin-bottom: 1rem;
+	width: 50%;
+}
+
+.loop--two-col li:nth-child(2n + 1) {
+	padding-right: 0.5vw;
+}
+
+.loop--two-col li:nth-child(2n) {
+	padding-left: 0.5vw;
 }
 
 .loop-container {
