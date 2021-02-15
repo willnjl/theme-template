@@ -2,14 +2,20 @@
   height: 100vh;
   min-height: 600px;
   color: white;
-  h1 {
-    font-weight: unset;
-    font-size: 8rem;
-    text-transform: uppercase;
-    line-height: 8rem;
-  }
-  p {
-    @extend .two-thirds;
+
+  .text__container {
+    margin: 0;
+    z-index: 1;
+    max-width: $wrap-width-large;
+    h1 {
+      font-weight: unset;
+      font-size: 8rem;
+      text-transform: uppercase;
+      line-height: 8rem;
+    }
+    p {
+      @extend .two-thirds;
+    }
   }
 }
 

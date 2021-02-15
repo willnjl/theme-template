@@ -1,1 +1,16 @@
 @import "hero";
+
+.banner-less {
+  h1 {
+    font-weight: normal;
+    font-family: $font-primary;
+    line-height: 3rem;
+  }
+  height: 50vh;
+  min-height: 400px;
+  color: black;
+
+  .wrap-tight {
+    width: 100%;
+  }
+}

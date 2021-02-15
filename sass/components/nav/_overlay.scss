@@ -1,88 +1,82 @@
-$width: 35vw;
+$width: 100vw;
 
-@media screen and (max-width: $bp-l) {
+.sidenav {
+  opacity: 0;
+  transform: translateX(-$width);
+  height: 100%;
+  width: $width;
+  position: fixed;
+  z-index: 6;
+  top: 0;
+  left: 0;
+  background-color: $black;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: opacity 0.5s;
+  display: flex;
+  justify-content: space-between;
+}
+.sidenav-open {
   .sidenav {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  .site-branding {
     opacity: 0;
-    transform: translateX(-$width);
-    height: 100%; /* 100% Full-height */
-    width: $width; /* 0 width - change this with JavaScript */
-    position: fixed; /* Stay in place */
-    z-index: 6; /* Stay on top */
-    top: 0; /* Stay at the top */
-    left: 0;
-    background-color: $blue; /* Black*/
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 60px; /* Place content 60px from the top */
-    transition: transform 0.5s; /* 0.5 second transition effect to slide in the sidenav */
   }
+}
 
-  @media screen and (max-width: 650px) {
-    .sidenav {
-      width: 45vw;
-      transform: translateX(-45vw);
+/* The navigation menu links */
+.sidenav .menu a {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.2em;
+  letter-spacing: 2px;
+  padding: 1.2rem 2rem;
+  border-bottom: 1px solid $offblack;
+  text-transform: lowercase;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav .menu a:hover {
+  color: $yellow;
+}
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+
+.main-navigation {
+  width: 50%;
+  padding-right: 4rem;
+  min-width: 400px;
+}
+
+.header__contact {
+  padding-right: 10vw;
+  color: white;
+  z-index: 9998;
+  width: 50%;
+  ul {
+    font-size: 0.9rem;
+    li {
+      &:first-child {
+        padding: 1.2rem 0rem;
+      }
+      line-height: $line-height;
+      a {
+        text-decoration: underline;
+      }
     }
   }
-  @media screen and (max-width: 550px) {
-    .sidenav {
-      width: 55vw;
-      transform: translateX(-55vw);
-    }
+  p {
+    margin: 1.2rem 0;
   }
-  @media screen and (max-width: 400px) {
-    .sidenav {
-      width: 85vw;
-      transform: translateX(-85vw);
-    }
-  }
-  .sidenav-open {
-    .sidenav {
-      opacity: 1;
-      transform: translateX(0);
-    }
-  }
+}
 
-  .sidenav-open > #menu-toggle {
-    svg {
-      transition: fill 1s;
-      fill: white;
-    }
-  }
-
-  .menu {
-    margin-top: 3rem;
-  }
-  /* The navigation menu links */
-  .sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 1.2rem;
-    letter-spacing: 2px;
-    padding: 1rem 1.2rem;
-    border-top: 1px solid white;
-    text-transform: uppercase;
-    text-align: right;
-    color: white;
-    display: block;
-    transition: 0.3s;
-  }
-
-  /* When you mouse over the navigation links, change their color */
-  .sidenav a:hover {
-    // background-color: $red-darken;
-  }
-
-  /* Position and style the close button (top right corner) */
-  .sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-  }
-
-  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-  #main {
-    transition: margin-left 0.5s;
+@media screen and (max-width: $bp-m) {
+  .header__contact {
+    display: none;
   }
 }

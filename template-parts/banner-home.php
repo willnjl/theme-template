@@ -5,13 +5,11 @@
 ?>
 
 <section class="banner hero align-center"
-class="parallax-window" data-parallax="scroll" data-image-src="<?= $img['url'] ?>"
-alt="<?= $img['alt']; ?>"
 >
 
 <?php if($heading) : ?>
-    
-<div >
+    <video src="https://fifteenten.co.uk/wp-content/uploads/2018/09/videohive-9160177-academy-leader-00.mp4" class="wp-video" autoplay loop muted></video>
+<div class="text__container">
     <h1>
         <?= $heading ?>
     </h1>
@@ -22,3 +20,8 @@ alt="<?= $img['alt']; ?>"
 
 <?php endif;?> 
 </section>
+
+<script>
+
+
+</script>

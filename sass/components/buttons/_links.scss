@@ -9,35 +9,34 @@ a.link {
 
 .btn-link,
 a.btn-link {
+  font-weight: 600;
   position: relative;
   display: flex;
   align-items: center;
-  max-width: 225px;
+  max-width: 235px;
   padding: 15px 1.5rem;
   border-radius: 50px;
   color: $blue;
-  border: 2px solid $blue;
+  border: 3px solid $blue;
   background-color: white;
 
   &:after {
-    content: "";
+    @extend .fa;
+    @extend .fa-chevron-right;
+    color: $blue;
     display: inline-block;
-    margin-left: 1.2rem;
-    width: 27px;
-    height: 20px;
-    background-image: url("./icons/arrow.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    margin-left: 2rem;
     transition: 0.2s;
   }
 
   &:hover {
-    border-color: #333;
-    color: #333;
+    background-color: $blue;
+    text-decoration: none;
+    color: white;
     &::after {
+      color: white;
       transition: 0.2s;
-      margin-left: 1.5rem;
+      margin-left: 2.2rem;
     }
   }
 }

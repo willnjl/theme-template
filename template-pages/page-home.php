@@ -17,15 +17,14 @@ get_header();
     <div class="first">
         <?php get_template_part( 'template-parts/section', 'panels' ) ?>
     </div>
-        <section class="grey-bg--bottom">
-            <?php get_template_part( 'template-parts/textblock', 'homepage' ) ?>
-            <?php get_template_part( 'template-parts/section', 'trailer' ) ?>
-            <?php get_template_part( 'template-parts/textblock', 'homepage--link' ) ?>
-        </section>
+    <section class="grey-bg--bottom">
+        <?php get_template_part( 'template-parts/textblock', 'homepage' ) ?>
+        <?php get_template_part( 'template-parts/section', 'trailer' ) ?>
+        <?php get_template_part( 'template-parts/textblock', 'homepage--link' ) ?>
+    </section>
         <?php get_template_part( 'template-parts/loops', 'client--homepage' ) ?>
         <?php get_template_part( 'template-parts/loops', 'posts--swiper' ) ?>
         <?php get_template_part( 'template-parts/form', 'small' ) ?>
-        
     </div>
 </main>
 

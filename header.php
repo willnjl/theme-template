@@ -1,4 +1,4 @@
-<?php
+ <?php
 /**
  * The header for our theme
  *
@@ -20,25 +20,47 @@
 	<?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?>>
+<body>
 
 <div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'fiteenten' ); ?></a>
-
 	<header id="masthead" class="site-header">
-		<div class="site-branding">
-			<?php the_custom_logo(); ?>
-		</div><!-- .site-branding -->
+		<div class="wrap nav-bar">
+			<div class="site-branding">
+				<?php get_template_part( 'template-parts/component', 'logo',  ); ?>
+			</div><!-- .site-branding -->
+			 
+			<div class="sidenav">
+				<nav id="site-navigation" class="main-navigation">
+					<?php
+				wp_nav_menu(
+					array(
+						'theme_location' => 'menu-1',
+						'menu_id'        => 'primary-menu',
+						)
+					);
+					?>
+			</nav><!-- #site-navigation -->
+			<div class="header__contact">
+				<ul>
+					<li><a href="tel:0117 427 1510">0117 427 1510</a></li>
+					<li><a href="mailto:info@fifteenten.co.uk">info@fifteenten.co.uk</a></li>
+					<li><a href="/">www.fifteenten.co.uk</a></li>
+				</ul>
 
-		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'fiteenten' ); ?></button>
-			<?php
-			wp_nav_menu(
-				array(
-					'theme_location' => 'menu-1',
-					'menu_id'        => 'primary-menu',
-				)
-			);
-			?>
-		</nav><!-- #site-navigation -->
+				<p>
+					<address>36 King Street, Bristol, BS1 4DZ</address>
+				</p>
+				<p class="p-s">
+					Fifteen Ten Ltd is a Limited Company in England and Wales. Registered Company Number 8016262. Registered Address Park House, 10 Park Street, Bristol, BS1 5HX. VAT registration number 170 2018 53.
+				</p>
+			</div>
+		</div>
+			<button class="hamburger hamburger--squeeze" type="button" id="navicon">
+	        <span class="hamburger-box">
+	          <span class="hamburger-inner"></span>
+	        </span>
+		  </button>
+		</div>
+		<div class="bg-img" id="nav-mask"></div>
+
 	</header><!-- #masthead -->

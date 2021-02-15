@@ -19,8 +19,10 @@ section {
   background: $grey;
 }
 .grey-bg--bottom {
+  position: relative;
   background: white;
-  background: linear-gradient(0deg, $grey 50%, white 50%);
+  background: linear-gradient(0deg, $grey calc(50% + 4rem), white 50%);
+  z-index: 1;
 }
 .grey-bg--top {
   background: $grey;

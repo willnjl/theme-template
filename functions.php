@@ -143,13 +143,14 @@ function fiteenten_scripts() {
 	wp_enqueue_style( 'swiper-style', 'https://unpkg.com/swiper/swiper-bundle.min.css', array(), _S_VERSION );
 	wp_enqueue_style( 'fiteenten-style', get_template_directory_uri().'/css/style.min.css', array(), _S_VERSION );
 	wp_style_add_data( 'fiteenten-style', 'rtl', 'replace' );
-
 	wp_enqueue_script( 'fiteenten-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
-	wp_enqueue_script( 'fiteenten-instabundle', get_template_directory_uri() . '/js/insta.bundle.js', array(), _S_VERSION, true );
+	wp_enqueue_script( 'fiteenten-jquery','https://code.jquery.com/jquery-3.5.1.slim.min.js', array(), _S_VERSION, false );
 	wp_enqueue_script( 'fiteenten-parallax', get_template_directory_uri() . '/js/parallax.min.js', array(), _S_VERSION, true );
 	wp_enqueue_script( 'fiteenten-swiper', 'https://unpkg.com/swiper/swiper-bundle.min.js', array(), _S_VERSION, false );
-	// wp_enqueue_script( 'fiteenten-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
-
+	wp_enqueue_script( 'fiteenten-app', get_template_directory_uri() . '/js/app.js', array(), _S_VERSION, true );
+	wp_enqueue_script( 'fiteenten-FIT', get_template_directory_uri() . '/js/jquery.fitvids.js', array(), _S_VERSION, false );
+	 wp_deregister_script('wp-mediaelement');
+   wp_deregister_style('wp-mediaelement');
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
