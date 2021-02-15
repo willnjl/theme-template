@@ -1,0 +1,15 @@
+.banner--post {
+  .wrap {
+    display: flex;
+    height: 100%;
+  }
+
+  height: 550px;
+  .text__container {
+    margin-top: auto;
+    h1 {
+      font-family: $font-primary;
+      color: white;
+    }
+  }
+}

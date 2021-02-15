@@ -1,0 +1,15 @@
+@charset "UTF-8";
+.textblock-content ul li {
+	margin-left: 10rem;
+	line-height: 2rem;
+	vertical-align: middle;
+}
+
+.textblock-content ul li::before {
+	margin-right: 1rem;
+	content: "▪";
+	color: #eaeaea;
+	font-size: 2rem;
+}
+
+/*# sourceMappingURL=content.css.map */

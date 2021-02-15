@@ -1,0 +1,9 @@
+{
+	"version": 3,
+	"file": "content.css",
+	"sources": [
+		"../../../sass/components/text-blocks/content.scss"
+	],
+	"names": [],
+	"mappings": ";AAAA,AAEI,kBAFc,CAChB,EAAE,CACA,EAAE,CAAC;CACD,WAAW,EAAE,KAAK;CAClB,WAAW,EAAE,IAAI;CACjB,cAAc,EAAE,MAAM;CAOvB;;AAZL,AAMM,kBANY,CAChB,EAAE,CACA,EAAE,AAIC,QAAQ,CAAC;CACR,YAAY,EAAE,IAAI;CAClB,OAAO,EAAE,IAAI;CACb,KAAK,EAAE,OAAO;CACd,SAAS,EAAE,IAAI;CAChB"
+}

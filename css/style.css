@@ -188,7 +188,7 @@ table {
 
 section,
 footer {
-	padding: 6rem 6vw;
+	padding: 4rem 6vw;
 }
 
 header {
@@ -3325,6 +3325,24 @@ section {
 	height: 125px;
 }
 
+.banner--post {
+	height: 550px;
+}
+
+.banner--post .wrap {
+	display: flex;
+	height: 100%;
+}
+
+.banner--post .text__container {
+	margin-top: auto;
+}
+
+.banner--post .text__container h1 {
+	font-family: "Graphik";
+	color: white;
+}
+
 .banner-less {
 	margin-top: 95px;
 	height: 50vh;
@@ -3373,6 +3391,24 @@ section {
 	right: -25px;
 	width: 300px;
 	height: 125px;
+}
+
+.banner--post {
+	height: 550px;
+}
+
+.banner--post .wrap {
+	display: flex;
+	height: 100%;
+}
+
+.banner--post .text__container {
+	margin-top: auto;
+}
+
+.banner--post .text__container h1 {
+	font-family: "Graphik";
+	color: white;
 }
 
 .banner-less {
@@ -3712,6 +3748,43 @@ address.p-l {
 	}
 }
 
+.textblock-content {
+	display: flex;
+}
+
+.textblock-content .post-meta {
+	position: relative;
+	width: 300px;
+	line-height: 2rem;
+	padding-right: 4rem;
+}
+
+.textblock-content .body {
+	display: block;
+	width: 100%;
+}
+
+.textblock-content .body p {
+	margin-bottom: 1rem;
+}
+
+.textblock-content .body ul li {
+	line-height: 2rem;
+	vertical-align: middle;
+}
+
+.textblock-content .body ul li::before {
+	margin-right: 1rem;
+	content: "▪";
+	color: #eaeaea;
+	font-size: 2rem;
+}
+
+.textblock-content .body hr {
+	border-top: 1.2rem solid #f0f0f0;
+	height: 1px;
+}
+
 .site-branding {
 	z-index: 9999;
 	width: 75px;
@@ -3759,6 +3832,7 @@ address.p-l {
 }
 
 .panels .panel {
+	font-family: "Compacta";
 	padding: 1rem;
 	position: relative;
 	width: 100%;
@@ -3772,8 +3846,9 @@ address.p-l {
 
 .panels .panel h2 {
 	text-transform: uppercase;
-	font-size: 3rem;
+	font-size: 5.5rem;
 	z-index: 1;
+	font-weight: normal;
 }
 
 .panels .panel::after {
