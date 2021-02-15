@@ -1,0 +1,60 @@
+.banner-project {
+  padding-top: 0;
+  color: black;
+  position: relative;
+  overflow: hidden;
+  h2 {
+    line-height: 3rem;
+    font-weight: normal;
+    width: 50%;
+    font-family: $font-primary;
+  }
+  .wrap {
+    width: 100%;
+    justify-content: space-between;
+    height: 100%;
+  }
+  .banner-points {
+    ul {
+      line-height: 2rem;
+    }
+    width: 500px;
+    margin-left: 2rem;
+  }
+}
+.project-title {
+  top: 0;
+  left: 0;
+
+  width: 200%;
+  text-overflow: clip;
+  white-space: nowrap;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-style: $font-secondary;
+}
+
+.project-marquee-container {
+  // position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.swiper-project-title {
+  position: relative;
+  .swiper-slide {
+    min-width: 30px;
+    padding: 0;
+    margin: 0;
+    font-size: 15rem;
+    color: $grey;
+    background-color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    width: unset;
+  }
+  position: relative;
+  .swiper-slide.space {
+    min-width: 60px;
+  }
+}
