@@ -1,7 +1,12 @@
+
+<?php
+    $img = get_field('parallax_image');
+?>
+
 <section
 class="parallax-window banner--small" 
 data-parallax="scroll"
-data-image-src="<?= get_template_directory_uri(  )?>/images/small-baner.png"
+data-image-src="<?= $img['url'] ?>"
 >
 
 </section>

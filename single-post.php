@@ -1,6 +1,6 @@
 <?php
 /**
-* Template Name: Homepage Default
+* 
 *
 * @package WordPress
 

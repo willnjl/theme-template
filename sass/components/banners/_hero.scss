@@ -2,12 +2,12 @@
   height: 100vh;
   min-height: 600px;
   color: white;
-
   .text__container {
     margin: 0;
     z-index: 1;
     max-width: $wrap-width-large;
     h1 {
+      font-family: $font-secondary;
       font-weight: unset;
       font-size: 8rem;
       text-transform: uppercase;

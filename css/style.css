@@ -258,7 +258,6 @@ body {
 }
 
 h1 {
-	font-family: "Compacta";
 	line-height: 3.4rem;
 	font-size: 2.5rem;
 	font-weight: 700;
@@ -394,7 +393,7 @@ html {
 .bg-text {
 	position: absolute;
 	z-index: -1;
-	color: #f4f4f4;
+	color: #f5f5f5;
 }
 
 hr {
@@ -413,7 +412,8 @@ hr {
 	padding-bottom: 3.5rem;
 }
 
-.swiper-marquee .swiper-wrapper {
+.swiper-marquee .swiper-wrapper,
+.swiper-project-title .swiper-wrapper {
 	-webkit-transition-timing-function: linear !important;
 	-o-transition-timing-function: linear !important;
 	transition-timing-function: linear !important;
@@ -3282,6 +3282,7 @@ section {
 }
 
 .banner .text__container h1, .banner--small .text__container h1 {
+	font-family: "Compacta";
 	font-weight: unset;
 	font-size: 8rem;
 	text-transform: uppercase;
@@ -3318,6 +3319,73 @@ section {
 .banner--post .text__container h1 {
 	font-family: "Graphik";
 	color: white;
+}
+
+.banner-project {
+	padding-top: 0;
+	color: black;
+	position: relative;
+	overflow: hidden;
+}
+
+.banner-project h2 {
+	line-height: 3rem;
+	font-weight: normal;
+	width: 50%;
+	font-family: "Graphik";
+}
+
+.banner-project .wrap {
+	width: 100%;
+	justify-content: space-between;
+	height: 100%;
+}
+
+.banner-project .banner-points {
+	width: 500px;
+	margin-left: 2rem;
+}
+
+.banner-project .banner-points ul {
+	line-height: 2rem;
+}
+
+.project-title {
+	top: 0;
+	left: 0;
+	width: 200%;
+	text-overflow: clip;
+	white-space: nowrap;
+	font-weight: 600;
+	text-transform: uppercase;
+	font-style: "Compacta";
+}
+
+.project-marquee-container {
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
+
+.swiper-project-title {
+	position: relative;
+	position: relative;
+}
+
+.swiper-project-title .swiper-slide {
+	min-width: 30px;
+	padding: 0;
+	margin: 0;
+	font-size: 15rem;
+	color: #f0f0f0;
+	background-color: white;
+	text-transform: uppercase;
+	font-weight: 600;
+	width: unset;
+}
+
+.swiper-project-title .swiper-slide.space {
+	min-width: 60px;
 }
 
 .banner-less {
@@ -3350,6 +3418,7 @@ section {
 }
 
 .banner .text__container h1, .banner--small .text__container h1 {
+	font-family: "Compacta";
 	font-weight: unset;
 	font-size: 8rem;
 	text-transform: uppercase;
@@ -3386,6 +3455,73 @@ section {
 .banner--post .text__container h1 {
 	font-family: "Graphik";
 	color: white;
+}
+
+.banner-project {
+	padding-top: 0;
+	color: black;
+	position: relative;
+	overflow: hidden;
+}
+
+.banner-project h2 {
+	line-height: 3rem;
+	font-weight: normal;
+	width: 50%;
+	font-family: "Graphik";
+}
+
+.banner-project .wrap {
+	width: 100%;
+	justify-content: space-between;
+	height: 100%;
+}
+
+.banner-project .banner-points {
+	width: 500px;
+	margin-left: 2rem;
+}
+
+.banner-project .banner-points ul {
+	line-height: 2rem;
+}
+
+.project-title {
+	top: 0;
+	left: 0;
+	width: 200%;
+	text-overflow: clip;
+	white-space: nowrap;
+	font-weight: 600;
+	text-transform: uppercase;
+	font-style: "Compacta";
+}
+
+.project-marquee-container {
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
+
+.swiper-project-title {
+	position: relative;
+	position: relative;
+}
+
+.swiper-project-title .swiper-slide {
+	min-width: 30px;
+	padding: 0;
+	margin: 0;
+	font-size: 15rem;
+	color: #f0f0f0;
+	background-color: white;
+	text-transform: uppercase;
+	font-weight: 600;
+	width: unset;
+}
+
+.swiper-project-title .swiper-slide.space {
+	min-width: 60px;
 }
 
 .banner-less {
@@ -3952,7 +4088,6 @@ address.p-l {
 .swiper-testimonial {
 	display: flex;
 	width: 100%;
-	height: 100% !important;
 	overflow-x: hidden;
 }
 
@@ -3960,7 +4095,7 @@ address.p-l {
 	background-color: #f0f0f0;
 	padding-left: 2rem;
 	font-size: 18px;
-	height: 100%;
+	height: 100% !important;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: -webkit-flex;
