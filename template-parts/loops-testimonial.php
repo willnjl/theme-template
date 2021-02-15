@@ -44,6 +44,7 @@
     const swiper = new Swiper('.swiper-testimonial', {
         direction: 'horizontal',
         effect: 'fade',
+        loop: true,
         navigation: {
             prevEl: '#prev-1',
             nextEl: '#next-1',

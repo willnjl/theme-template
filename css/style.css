@@ -3402,6 +3402,12 @@ section {
 	color: #f0f0f0;
 	font-weight: 400;
 	font-size: 1.75rem;
+	cursor: pointer;
+}
+
+.testimonial__buttons .btn:hover {
+	transition: 0.3s;
+	color: #0030ff;
 }
 
 a.link {
