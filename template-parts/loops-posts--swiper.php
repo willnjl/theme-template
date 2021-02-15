@@ -105,7 +105,7 @@ const swiper = new Swiper('.swiper-container', {
    direction: 'horizontal',
    centerSlide: false,
    freeMode: true,
-   width: 500,
+   width: 400,
    loop: true,
     grabCursor: true,
     loopedSlides: 3

@@ -2,8 +2,8 @@
     <div class="wrap-tight">
         <div class="row">
             <div class="testimonial__buttons">
-                <button id="prev-1"class="btn fa fa-chevron-left"></button>
-                <button id="next-1" class="btn fa fa-chevron-right"></button>
+                <button id="prev-1"class="fa fa-chevron-left"></button>
+                <button id="next-1" class="fa fa-chevron-right"></button>
             </div>
             <div class="swiper-testimonial">
                 <ul class="swiper-wrapper">

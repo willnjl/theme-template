@@ -5,29 +5,6 @@
   padding-bottom: 3.5rem;
 }
 
-.swiper-pagination {
-  &-bullet {
-    margin: 0rem 12px !important;
-    width: 20px;
-    height: 20px;
-    border-radius: 0;
-    background-color: #181818;
-    border: 2px solid $blue;
-    opacity: 1;
-    &:active {
-      outline: none;
-    }
-    &-active {
-      background-color: $blue;
-    }
-  }
-}
-
-.post-slide {
-  padding: 2rem;
-  line-height: $line-height;
-}
-
 .swiper-marquee {
   .swiper-wrapper {
     -webkit-transition-timing-function: linear !important;

@@ -188,7 +188,7 @@ table {
 
 section,
 footer {
-	padding: 4rem 6vw;
+	padding: 6rem 6vw;
 }
 
 header {
@@ -411,29 +411,6 @@ hr {
 	height: 100%;
 	min-height: 100%;
 	padding-bottom: 3.5rem;
-}
-
-.swiper-pagination-bullet {
-	margin: 0rem 12px !important;
-	width: 20px;
-	height: 20px;
-	border-radius: 0;
-	background-color: #181818;
-	border: 2px solid #0030ff;
-	opacity: 1;
-}
-
-.swiper-pagination-bullet:active {
-	outline: none;
-}
-
-.swiper-pagination-bullet-active {
-	background-color: #0030ff;
-}
-
-.post-slide {
-	padding: 2rem;
-	line-height: 1.6rem;
 }
 
 .swiper-marquee .swiper-wrapper {
@@ -3434,7 +3411,7 @@ section {
 	height: 100%;
 }
 
-.testimonial__buttons .btn {
+.testimonial__buttons button {
 	width: 65px;
 	height: 150px;
 	border: 0;
@@ -3447,7 +3424,7 @@ section {
 	cursor: pointer;
 }
 
-.testimonial__buttons .btn:hover {
+.testimonial__buttons button:hover {
 	transition: 0.3s;
 	color: #0030ff;
 }
@@ -3909,14 +3886,6 @@ address.p-l {
 	}
 }
 
-.swiper-slide {
-	width: 300px;
-}
-
-.swiper-slide p {
-	margin-top: 1rem;
-}
-
 .loop--two-col {
 	display: flex;
 	flex-wrap: wrap;
@@ -3983,7 +3952,7 @@ address.p-l {
 .swiper-testimonial {
 	display: flex;
 	width: 100%;
-	height: 100% import !important;
+	height: 100% !important;
 	overflow-x: hidden;
 }
 
@@ -3991,7 +3960,7 @@ address.p-l {
 	background-color: #f0f0f0;
 	padding-left: 2rem;
 	font-size: 18px;
-	height: 100% !important;
+	height: 100%;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: -webkit-flex;
