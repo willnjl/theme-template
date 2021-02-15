@@ -431,9 +431,15 @@ hr {
 	background-color: #0030ff;
 }
 
-.swiper-slide {
+.post-slide {
 	padding: 2rem;
 	line-height: 1.6rem;
+}
+
+.swiper-wrapper {
+	-webkit-transition-timing-function: linear !important;
+	-o-transition-timing-function: linear !important;
+	transition-timing-function: linear !important;
 }
 
 /*!

@@ -8,3 +8,14 @@ const swiper = new Swiper(".swiper-container", {
     },
   },
 });
+
+const marquee = new Swiper(".swiper-marquee", {
+  width: 500,
+  loop: true,
+
+  breakpoints: {
+    1200: {
+      loopedSlides: 10,
+    },
+  },
+});

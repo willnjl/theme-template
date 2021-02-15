@@ -15,3 +15,18 @@ if( have_rows('key_points') ): ?>
 </section>
 <?php else :
 endif; ?>
+
+
+<script>
+    const marquee = new Swiper(".swiper-marquee", {
+        width: 500,
+        loop: true,
+
+        breakpoints: {
+            1200: {
+            loopedSlides: 10,
+            },
+        },
+    });
+
+</script>

@@ -23,7 +23,15 @@
   }
 }
 
-.swiper-slide {
+.post-slide {
   padding: 2rem;
   line-height: $line-height;
+}
+.maquee-slide {
+}
+
+.swiper-wrapper {
+  -webkit-transition-timing-function: linear !important;
+  -o-transition-timing-function: linear !important;
+  transition-timing-function: linear !important;
 }
