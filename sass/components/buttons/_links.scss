@@ -1,3 +1,6 @@
+$btn-radius: 50px;
+$btn-border: 3px solid;
+
 a.link {
   color: $blue;
   text-decoration: underline;
@@ -7,17 +10,20 @@ a.link {
   }
 }
 
-.btn-link,
-a.btn-link {
+.btn {
   font-weight: 600;
   position: relative;
   display: flex;
   align-items: center;
-  max-width: 235px;
+  border-radius: $btn-radius;
+}
+
+.btn-link,
+a.btn-link {
   padding: 15px 1.5rem;
-  border-radius: 50px;
+  max-width: 235px;
   color: $blue;
-  border: 3px solid $blue;
+  border: $btn-border $blue;
   background-color: white;
   cursor: pointer;
   &:after {
@@ -39,6 +45,15 @@ a.btn-link {
       margin-left: 2.2rem;
     }
   }
+}
+
+.link--category {
+  color: #cacaca;
+  justify-content: center;
+  border: $btn-border $grey;
+  font-size: 0.75rem;
+
+  margin-bottom: 1rem;
 }
 
 .scroll-down {

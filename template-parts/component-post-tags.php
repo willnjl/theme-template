@@ -1,8 +1,8 @@
 <?php $categories = get_the_category(  ) ?>
 
-<ul>
+<ul class="categories">
     <?php foreach($categories as $cat) : ?>
-        <li class="link--category">
+        <li class="btn link--category">
             <?= $cat->name ?>
         </li>
         <?php endforeach; ?> 

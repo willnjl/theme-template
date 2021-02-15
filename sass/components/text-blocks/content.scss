@@ -2,9 +2,19 @@
   display: flex;
   .post-meta {
     position: relative;
-    width: 300px;
+    width: 350px;
     line-height: 2rem;
     padding-right: 4rem;
+
+    .categories {
+      margin: 3rem 0;
+    }
+
+    .author {
+      img {
+        margin: 1rem 0;
+      }
+    }
   }
 
   .body {
@@ -13,21 +23,31 @@
     p {
       margin-bottom: 1rem;
     }
-    ul {
-      li {
-        line-height: 2rem;
-        vertical-align: middle;
-        &::before {
-          margin-right: 1rem;
-          content: "▪";
-          color: #eaeaea;
-          font-size: 2rem;
+    .content {
+      ul {
+        li {
+          line-height: 2rem;
+          vertical-align: middle;
+          &::before {
+            margin-right: 1rem;
+            content: "▪";
+            color: #eaeaea;
+            font-size: 2rem;
+          }
         }
       }
+      hr {
+        margin: 3rem 0;
+        border-top: 1.2rem solid $grey;
+        height: 1px;
+      }
     }
-    hr {
-      border-top: 1.2rem solid $grey;
-      height: 1px;
+
+    .shares {
+      margin-top: 8rem;
+      li {
+        line-height: 1.5rem;
+      }
     }
   }
 }

@@ -436,7 +436,7 @@ hr {
 	line-height: 1.6rem;
 }
 
-.swiper-wrapper {
+.swiper-marquee .swiper-wrapper {
 	-webkit-transition-timing-function: linear !important;
 	-o-transition-timing-function: linear !important;
 	transition-timing-function: linear !important;
@@ -3461,15 +3461,18 @@ a.link:hover {
 	color: #0126c9;
 }
 
-.btn-link,
-a.btn-link {
+.btn {
 	font-weight: 600;
 	position: relative;
 	display: flex;
 	align-items: center;
-	max-width: 235px;
-	padding: 15px 1.5rem;
 	border-radius: 50px;
+}
+
+.btn-link,
+a.btn-link {
+	padding: 15px 1.5rem;
+	max-width: 235px;
 	color: #0030ff;
 	border: 3px solid #0030ff;
 	background-color: white;
@@ -3496,6 +3499,14 @@ a.btn-link:hover::after {
 	color: white;
 	transition: 0.2s;
 	margin-left: 2.2rem;
+}
+
+.link--category {
+	color: #cacaca;
+	justify-content: center;
+	border: 3px solid #f0f0f0;
+	font-size: 0.75rem;
+	margin-bottom: 1rem;
 }
 
 .scroll-down {
@@ -3754,9 +3765,17 @@ address.p-l {
 
 .textblock-content .post-meta {
 	position: relative;
-	width: 300px;
+	width: 350px;
 	line-height: 2rem;
 	padding-right: 4rem;
+}
+
+.textblock-content .post-meta .categories {
+	margin: 3rem 0;
+}
+
+.textblock-content .post-meta .author img {
+	margin: 1rem 0;
 }
 
 .textblock-content .body {
@@ -3768,21 +3787,30 @@ address.p-l {
 	margin-bottom: 1rem;
 }
 
-.textblock-content .body ul li {
+.textblock-content .body .content ul li {
 	line-height: 2rem;
 	vertical-align: middle;
 }
 
-.textblock-content .body ul li::before {
+.textblock-content .body .content ul li::before {
 	margin-right: 1rem;
 	content: "▪";
 	color: #eaeaea;
 	font-size: 2rem;
 }
 
-.textblock-content .body hr {
+.textblock-content .body .content hr {
+	margin: 3rem 0;
 	border-top: 1.2rem solid #f0f0f0;
 	height: 1px;
+}
+
+.textblock-content .body .shares {
+	margin-top: 8rem;
+}
+
+.textblock-content .body .shares li {
+	line-height: 1.5rem;
 }
 
 .site-branding {
