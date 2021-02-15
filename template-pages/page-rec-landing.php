@@ -19,6 +19,7 @@ get_header();
         <?php get_template_part( 'template-parts/loops', 'client-marquee' ) ?>
     </div>
         <?php get_template_part('template-parts/loops', 'recruitment-posts') ?>
+        <?php get_template_part('template-parts/loops', 'testimonial') ?>
         <?php //get_template_part( 'template-parts/loops', 'posts--swiper' ) ?>
         <?php // get_template_part( 'template-parts/form', 'small' ) ?>
         

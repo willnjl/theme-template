@@ -1,0 +1,15 @@
+.testimonial__buttons {
+  width: 100px;
+  height: 100%;
+  .btn {
+    width: 65px;
+    height: 150px;
+    border: 0;
+    outline: 0;
+    background-color: white;
+    margin-top: 10px;
+    color: $grey;
+    font-weight: 400;
+    font-size: 1.75rem;
+  }
+}
