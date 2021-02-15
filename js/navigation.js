@@ -4,20 +4,23 @@
   let y = w.scrollY;
 
   let scrolling = false;
-  w.addEventListener("scroll", () => {
-    scrolling = !scrolling;
 
-    setTimeout(() => {
-      scrolling = false;
-    }, 800);
+  if (!blackNav) {
+    w.addEventListener("scroll", () => {
+      scrolling = !scrolling;
 
-    y = w.scrollY;
-    if (y < 10) {
-      navMask.classList.remove("mask");
-    } else {
-      navMask.classList.add("mask");
-    }
-  });
+      setTimeout(() => {
+        scrolling = false;
+      }, 800);
+
+      y = w.scrollY;
+      if (y < 10) {
+        navMask.classList.remove("mask");
+      } else {
+        navMask.classList.add("mask");
+      }
+    });
+  }
 
   header.addEventListener("mouseenter", () => {
     header.classList.add("nav-down");

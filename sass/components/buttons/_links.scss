@@ -19,7 +19,7 @@ a.btn-link {
   color: $blue;
   border: 3px solid $blue;
   background-color: white;
-
+  cursor: pointer;
   &:after {
     @extend .fa;
     @extend .fa-chevron-right;

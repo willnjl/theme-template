@@ -12,6 +12,7 @@ get_header();
 
 ?>
 
+
 <main id="main">
     <?php get_template_part( 'template-parts/banner', 'bannerless' ) ?>
     <div class="first grey-bg">
@@ -20,12 +21,15 @@ get_header();
     </div>
         <?php get_template_part('template-parts/loops', 'recruitment-posts') ?>
         <?php get_template_part('template-parts/loops', 'testimonial') ?>
-        <?php //get_template_part( 'template-parts/loops', 'posts--swiper' ) ?>
-        <?php // get_template_part( 'template-parts/form', 'small' ) ?>
+        <?php get_template_part( 'template-parts/banner', 'parallax--small' ) ?>
+        <?php get_template_part( 'template-parts/form', 'small' ) ?>
         
     </div>
 </main>
 
+    <script>
+        let blackNav = true;
+    </script>
 
 
 <?php get_footer() ?>

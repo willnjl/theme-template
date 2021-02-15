@@ -506,6 +506,10 @@ hr {
 	bottom: -5px;
 }
 
+.hamburger-inner.hb-black, .hamburger-inner.hb-black::before, .hamburger-inner.hb-black::after {
+	background-color: #000;
+}
+
 .is-active:hover {
 	opacity: 0.7;
 }
@@ -513,7 +517,7 @@ hr {
 .is-active .hamburger-inner,
 .is-active .hamburger-inner::before,
 .is-active .hamburger-inner::after {
-	background-color: white;
+	background-color: white !important;
 }
 
 /*
@@ -3322,6 +3326,7 @@ section {
 }
 
 .banner-less {
+	margin-top: 95px;
 	height: 50vh;
 	min-height: 400px;
 	color: black;
@@ -3371,6 +3376,7 @@ section {
 }
 
 .banner-less {
+	margin-top: 95px;
 	height: 50vh;
 	min-height: 400px;
 	color: black;
@@ -3431,6 +3437,7 @@ a.btn-link {
 	color: #0030ff;
 	border: 3px solid #0030ff;
 	background-color: white;
+	cursor: pointer;
 }
 
 .btn-link:after,
@@ -3807,6 +3814,24 @@ address.p-l {
 	margin-top: 1rem;
 }
 
+.loop--two-col {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.loop--two-col li {
+	margin-bottom: 1rem;
+	width: 50%;
+}
+
+.loop--two-col li:nth-child(2n + 1) {
+	padding-right: 0.5vw;
+}
+
+.loop--two-col li:nth-child(2n) {
+	padding-left: 0.5vw;
+}
+
 .hover-card {
 	overflow: hidden;
 	position: relative;
@@ -3850,24 +3875,6 @@ address.p-l {
 .hover-card:hover .hover-card__link {
 	opacity: 1;
 	transition: 0.5s;
-}
-
-.loop--two-col {
-	display: flex;
-	flex-wrap: wrap;
-}
-
-.loop--two-col li {
-	margin-bottom: 1rem;
-	width: 50%;
-}
-
-.loop--two-col li:nth-child(2n + 1) {
-	padding-right: 0.5vw;
-}
-
-.loop--two-col li:nth-child(2n) {
-	padding-left: 0.5vw;
 }
 
 .swiper-testimonial {

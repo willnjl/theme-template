@@ -22,12 +22,16 @@ get_header();
         <?php get_template_part( 'template-parts/section', 'trailer' ) ?>
         <?php get_template_part( 'template-parts/textblock', 'homepage--link' ) ?>
     </section>
+    <div class="grey-bg">
         <?php get_template_part( 'template-parts/loops', 'client--homepage' ) ?>
         <?php get_template_part( 'template-parts/loops', 'posts--swiper' ) ?>
         <?php get_template_part( 'template-parts/form', 'small' ) ?>
     </div>
 </main>
 
+<script>
+    let blackNav = false;
+</script>
 
 
 <?php get_footer() ?>
