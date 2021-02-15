@@ -1,4 +1,4 @@
-<section class="grey-bg no-pad">
+<section class="no-pad">
 
 <?php
 
@@ -31,7 +31,7 @@ endif;
         width: 190,
         loop: true,
         spaceBetween: 10,
-        speed: 6000,
+        speed: 20000,
         autoplay: {
             delay: 0
         },
@@ -44,5 +44,5 @@ endif;
             },
         },
     });
-swiper.autoplay.start()
+
 </script>

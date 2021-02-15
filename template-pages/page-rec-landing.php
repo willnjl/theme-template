@@ -14,16 +14,13 @@ get_header();
 
 <main id="main">
     <?php get_template_part( 'template-parts/banner', 'bannerless' ) ?>
-    <div class="first">
-        <?php //get_template_part( 'template-parts/loops', 'keypoints' ) ?>
+    <div class="first grey-bg">
+        <?php get_template_part( 'template-parts/loops', 'keypoints' ) ?>
+        <?php get_template_part( 'template-parts/loops', 'client-marquee' ) ?>
     </div>
-    <?php get_template_part( 'template-parts/loops', 'client-marquee' ) ?>
-        <section class="grey-bg--bottom">
-          
-        </section>
-     
-        <?php get_template_part( 'template-parts/loops', 'posts--swiper' ) ?>
-        <?php get_template_part( 'template-parts/form', 'small' ) ?>
+        <?php get_template_part('template-parts/loops', 'recruitment-posts') ?>
+        <?php //get_template_part( 'template-parts/loops', 'posts--swiper' ) ?>
+        <?php // get_template_part( 'template-parts/form', 'small' ) ?>
         
     </div>
 </main>
