@@ -62,7 +62,7 @@ c)
 
 d)
 
-Can we add the social icons to this one?
+<!-- Can we add the social icons to this one? -->
 
 
 12.

@@ -3925,6 +3925,10 @@ address.p-l {
 	margin-bottom: 1rem;
 }
 
+.textblock-projects .body .content {
+	border: blue !important;
+}
+
 .textblock-projects .body .content ul li {
 	line-height: 2rem;
 	vertical-align: middle;
