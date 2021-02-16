@@ -3328,17 +3328,14 @@ section {
 }
 
 .banner-project {
-	padding-top: 0;
+	padding-top: 4rem;
 	color: black;
 	position: relative;
 	overflow: hidden;
 }
 
-.banner-project h2 {
-	line-height: 3rem;
-	font-weight: normal;
+.banner-project p {
 	width: 50%;
-	font-family: "Graphik";
 }
 
 .banner-project .wrap {
@@ -3465,17 +3462,14 @@ section {
 }
 
 .banner-project {
-	padding-top: 0;
+	padding-top: 4rem;
 	color: black;
 	position: relative;
 	overflow: hidden;
 }
 
-.banner-project h2 {
-	line-height: 3rem;
-	font-weight: normal;
+.banner-project p {
 	width: 50%;
-	font-family: "Graphik";
 }
 
 .banner-project .wrap {

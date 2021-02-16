@@ -6,7 +6,6 @@
 
 <div class="project-marquee-container">
     <div class="swiper-project-title">
-    
     <div class="swiper-wrapper">
             <?php
                 $title = get_the_title();
@@ -22,11 +21,11 @@
     </div>
 </div>
 <section class="banner-project">
-    <div class="wrap align-center">
-        <h2>
+    <div class="wrap row">
+        <p class=" p-xl ">
            
             <?= $heading ?>
-        </h2>
+        </p>
         <div class="banner-points">
             <?= $heading_points ?>
         </div>
@@ -40,7 +39,7 @@
         slidesPerView: "auto",
         loop: true,
         spaceBetween: 1,
-        speed: 20000,
+        speed: 25000,
         autoplay: {
             delay: 0
         },

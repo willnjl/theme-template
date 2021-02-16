@@ -19,28 +19,6 @@ $author_bio = get_field('author_bio') ;
 <main id="main">
     <?php get_template_part( 'template-parts/banner', 'project',  ) ?>
     <div class="wrap">
-        <section class="textblock-projects row">
-            <div class="post-meta">
-                <h3  class="p-l">
-                    Reading time:
-                </h3>
-                <p class="p-l">
-                    5mins
-                </p>
-                <?php get_template_part( 'template-parts/component', 'post-tags',  )?>
-                <div class="author">
-                    <h3  class="p-l">
-                        Author:
-                    </h3>
-                    <p class="p-l">
-                        <?=  $author ?>
-                    </p>
-                    <img src="<?= $auth_img['url'] ?>" alt="<?= $auth_img['alt'] ?>" srcset="">
-                    <p class="p-s">
-                        <?= $author_bio ?>
-                    </p>
-                </div>
-            </div>
             <div class="body">
                 <article class="content">
                     <?php echo get_field('content') ?>
