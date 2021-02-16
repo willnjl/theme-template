@@ -19,7 +19,7 @@ $author_bio = get_field('author_bio') ;
 <main id="main">
     <?php get_template_part( 'template-parts/banner', 'project',  ) ?>
     <div class="wrap">
-        <section class="textblock-content row">
+        <section class="textblock-projects row">
             <div class="post-meta">
                 <h3  class="p-l">
                     Reading time:

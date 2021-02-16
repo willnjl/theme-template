@@ -21,10 +21,10 @@ $font-primary: "Graphik"; //, Helvetica, arial, sans-serif;
 $font-secondary: "Compacta"; //, Helvetica, arial, sans-serif;
 
 $p-xl: 1.6rem;
-$p-large: 1.2rem;
+$p-large: 1.3rem;
 $p-small: 0.9rem;
 
-$line-height: 1.6rem;
+$line-height: 2.1rem;
 
 body {
   color: #000e1e;
@@ -73,6 +73,7 @@ html {
 
 .p-l {
   font-size: $p_large;
+  line-height: 2.1rem;
 }
 .p-xl {
   font-size: $p_xl;

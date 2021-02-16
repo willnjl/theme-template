@@ -6,7 +6,8 @@
   width: 100%;
   padding: 12px;
   height: $nav-height;
-  .wrap {
+  .nav-bar {
+    max-width: $wrap-width-large;
     overflow: hidden;
     height: 100%;
     display: flex;

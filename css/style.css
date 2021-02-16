@@ -284,7 +284,7 @@ h5 {
 }
 
 p {
-	line-height: 1.6rem;
+	line-height: 2.1rem;
 	font-weight: 200;
 }
 
@@ -297,7 +297,8 @@ html {
 }
 
 .p-l {
-	font-size: 1.2rem;
+	font-size: 1.3rem;
+	line-height: 2.1rem;
 }
 
 .p-xl {
@@ -3107,7 +3108,7 @@ section {
 }
 
 .wrap {
-	max-width: 1250px;
+	max-width: 1100px;
 	margin: 0 auto;
 	position: relative;
 }
@@ -3139,7 +3140,8 @@ section {
 	height: 95px;
 }
 
-.site-header .wrap {
+.site-header .nav-bar {
+	max-width: 1100px;
 	overflow: hidden;
 	height: 100%;
 	display: flex;
@@ -3183,6 +3185,7 @@ section {
 	z-index: 6;
 	top: 0;
 	left: 0;
+	padding-left: 2rem;
 	background-color: #000;
 	overflow-x: hidden;
 	padding-top: 60px;
@@ -3206,7 +3209,7 @@ section {
 	font-weight: 500;
 	font-size: 1.2em;
 	letter-spacing: 2px;
-	padding: 1.2rem 2rem;
+	padding: 1.2rem 0rem;
 	border-bottom: 1px solid #121212;
 	text-transform: lowercase;
 	color: white;
@@ -3234,11 +3237,11 @@ section {
 }
 
 .header__contact ul {
-	font-size: 0.9rem;
+	font-size: 0.8rem;
 }
 
 .header__contact ul li {
-	line-height: 1.6rem;
+	line-height: 2.1rem;
 }
 
 .header__contact ul li:first-child {
@@ -3251,6 +3254,7 @@ section {
 
 .header__contact p {
 	margin: 1.2rem 0;
+	max-width: 400px;
 }
 
 @media screen and (max-width: 720px) {
@@ -3273,12 +3277,14 @@ section {
 	height: 100vh;
 	min-height: 600px;
 	color: white;
+	justify-content: center;
 }
 
 .banner .text__container, .banner--small .text__container {
+	width: 100%;
 	margin: 0;
 	z-index: 1;
-	max-width: 1250px;
+	max-width: 1100px;
 }
 
 .banner .text__container h1, .banner--small .text__container h1 {
@@ -3398,7 +3404,6 @@ section {
 .banner-less h1 {
 	font-weight: normal;
 	font-family: "Graphik";
-	line-height: 3rem;
 }
 
 .banner-less .wrap-tight {
@@ -3409,12 +3414,14 @@ section {
 	height: 100vh;
 	min-height: 600px;
 	color: white;
+	justify-content: center;
 }
 
 .banner .text__container, .banner--small .text__container {
+	width: 100%;
 	margin: 0;
 	z-index: 1;
-	max-width: 1250px;
+	max-width: 1100px;
 }
 
 .banner .text__container h1, .banner--small .text__container h1 {
@@ -3534,7 +3541,6 @@ section {
 .banner-less h1 {
 	font-weight: normal;
 	font-family: "Graphik";
-	line-height: 3rem;
 }
 
 .banner-less .wrap-tight {
@@ -3670,9 +3676,10 @@ textarea {
 	border: none;
 	position: relative;
 	width: 100%;
-	padding: 10px;
+	padding: 1rem;
 	font-size: 1.1rem;
 	font-weight: 200;
+	border-radius: 5px;
 }
 
 .textarea-16 {
@@ -3683,10 +3690,11 @@ textarea {
 textarea {
 	width: 100%;
 	font-family: inherit;
+	border-radius: 5px;
 }
 
 .form p {
-	font-size: 1.2rem;
+	font-size: 1.3rem;
 }
 
 .form li {
@@ -3759,6 +3767,10 @@ footer .row .social-btns {
 
 footer .row .social-btns .btn-social {
 	margin-left: 35px;
+}
+
+footer .p-s {
+	line-height: 1.6rem;
 }
 
 address.p-l {
@@ -3852,15 +3864,6 @@ address.p-l {
 	transition: 0.2s;
 }
 
-.text-block__homepage p {
-	font-size: 1.2rem;
-	max-width: 700px;
-}
-
-.text-block__homepage--link p {
-	float: left;
-}
-
 .text-block__homepage--link a.btn-link {
 	margin-left: auto;
 }
@@ -3872,57 +3875,57 @@ address.p-l {
 	}
 }
 
-.textblock-content {
+.textblock-projects {
 	display: flex;
 }
 
-.textblock-content .post-meta {
+.textblock-projects .post-meta {
 	position: relative;
 	width: 350px;
 	line-height: 2rem;
 	padding-right: 4rem;
 }
 
-.textblock-content .post-meta .categories {
+.textblock-projects .post-meta .categories {
 	margin: 3rem 0;
 }
 
-.textblock-content .post-meta .author img {
+.textblock-projects .post-meta ß .author img {
 	margin: 1rem 0;
 }
 
-.textblock-content .body {
+.textblock-projects .body {
 	display: block;
 	width: 100%;
 }
 
-.textblock-content .body p {
+.textblock-projects .body p {
 	margin-bottom: 1rem;
 }
 
-.textblock-content .body .content ul li {
+.textblock-projects .body .content ul li {
 	line-height: 2rem;
 	vertical-align: middle;
 }
 
-.textblock-content .body .content ul li::before {
+.textblock-projects .body .content ul li::before {
 	margin-right: 1rem;
 	content: "▪";
 	color: #eaeaea;
 	font-size: 2rem;
 }
 
-.textblock-content .body .content hr {
+.textblock-projects .body .content hr {
 	margin: 3rem 0;
 	border-top: 1.2rem solid #f0f0f0;
 	height: 1px;
 }
 
-.textblock-content .body .shares {
+.textblock-projects .body .shares {
 	margin-top: 8rem;
 }
 
-.textblock-content .body .shares li {
+.textblock-projects .body .shares li {
 	line-height: 1.5rem;
 }
 
@@ -3958,6 +3961,26 @@ address.p-l {
 	object-fit: cover;
 }
 
+.trailer {
+	position: relative;
+	width: 100%;
+	height: 600px;
+	padding: 0;
+}
+
+.trailer iframe {
+	margin: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+#document {
+	border: 1px solid red;
+}
+
 .panels {
 	padding: 0;
 	min-height: unset;
@@ -3979,7 +4002,7 @@ address.p-l {
 	width: 100%;
 	min-width: 200px;
 	height: 100%;
-	border: 1px solid white;
+	border: 1px solid #333;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -4057,13 +4080,13 @@ address.p-l {
 }
 
 .hover-card .hover-card__link {
-	width: 100%;
+	width: 125%;
 	color: white;
 	font-size: 1.2rem;
 	position: absolute;
 	display: inline-flex;
 	bottom: 10px;
-	left: 0;
+	left: -50px;
 	z-index: 2;
 	opacity: 0;
 	padding: 0 15px;
@@ -4076,13 +4099,20 @@ address.p-l {
 }
 
 .hover-card:hover:after {
+	width: 100%;
 	height: 100%;
 	transition: 0.25s ease-out;
 }
 
 .hover-card:hover .hover-card__link {
+	width: 100%;
+	left: 0;
 	opacity: 1;
 	transition: 0.5s;
+}
+
+.post-slide p {
+	margin-top: 1rem;
 }
 
 .swiper-testimonial {
@@ -4128,7 +4158,7 @@ address.p-l {
 
 .client-logo {
 	margin: 10px;
-	max-width: 175px;
+	max-width: 200px;
 }
 
 .info {

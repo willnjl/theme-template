@@ -16,10 +16,11 @@ get_header();
 <main id="main">
     <?php get_template_part( 'template-parts/banner', 'bannerless' ) ?>
     <section class="no-pad grey-bg--bottom">
-        <div class="wrap-tight grey-bg--bottom">
-            <div class="col two-thirds grey-bg--bottom">
-                    <div >
-                        <img src="<?= get_template_directory_uri(  ) ?>/images/trailer.jpeg" alt="" class=" grey-bg--bottom">
+        <div class="wrap ">
+            <div class="col two-thirds">
+                    <div class="trailer">
+                        <iframe src="https://player.vimeo.com/video/472618407"  ></iframe>
+                       
                     </div>
                 </div>
         </div>

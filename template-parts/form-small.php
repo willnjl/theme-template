@@ -1,8 +1,8 @@
 <section class="grey-bg form">
-    <div class="wrap-tight cf two-cols">
+    <div class="wrap cf two-cols">
         <div class="col info">
             <p>
-                We'd love to hear about <strong>your project</strong>, give us a shout for a brief chat:
+                We'd love to hear about <strong>your project</strong>,<br /> give us a shout for a brief chat:
             </p>
 
             <ul>
