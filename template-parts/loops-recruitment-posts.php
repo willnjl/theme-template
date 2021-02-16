@@ -5,7 +5,7 @@
 ?>
 
 <section class="grey-bg--top--qtr no-pad">
- <div class="wrap-tight">
+ <div class="wrap">
      <ul class="loop--two-col">
          <li>
              <a href="<?= get_the_permalink() ?>" >
