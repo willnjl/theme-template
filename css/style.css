@@ -3897,61 +3897,61 @@ address.p-l {
 	}
 }
 
-.textblock-projects {
+.textblock-content {
 	display: flex;
 }
 
-.textblock-projects .post-meta {
+.textblock-content .post-meta {
 	position: relative;
 	width: 350px;
 	line-height: 2rem;
 	padding-right: 4rem;
 }
 
-.textblock-projects .post-meta .categories {
+.textblock-content .post-meta .categories {
 	margin: 3rem 0;
 }
 
-.textblock-projects .post-meta ß .author img {
+.textblock-content .post-meta .author img {
 	margin: 1rem 0;
 }
 
-.textblock-projects .body {
+.textblock-content .body {
 	display: block;
 	width: 100%;
 }
 
-.textblock-projects .body p {
+.textblock-content .body p {
 	margin-bottom: 1rem;
 }
 
-.textblock-projects .body .content {
+.textblock-content .body .content {
 	border: blue !important;
 }
 
-.textblock-projects .body .content ul li {
+.textblock-content .body .content ul li {
 	line-height: 2rem;
 	vertical-align: middle;
 }
 
-.textblock-projects .body .content ul li::before {
+.textblock-content .body .content ul li::before {
 	margin-right: 1rem;
 	content: "▪";
 	color: #eaeaea;
 	font-size: 2rem;
 }
 
-.textblock-projects .body .content hr {
+.textblock-content .body .content hr {
 	margin: 3rem 0;
 	border-top: 1.2rem solid #f0f0f0;
 	height: 1px;
 }
 
-.textblock-projects .body .shares {
+.textblock-content .body .shares {
 	margin-top: 8rem;
 }
 
-.textblock-projects .body .shares li {
+.textblock-content .body .shares li {
 	line-height: 1.5rem;
 }
 

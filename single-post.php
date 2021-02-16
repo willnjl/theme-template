@@ -18,8 +18,9 @@ $author_bio = get_field('author_bio') ;
 
 <main id="main">
     <?php get_template_part( 'template-parts/banner', 'post',  ) ?>
-    <div class="wrap">
-        <section class="textblock-content row">
+    <div>
+        <section class="">
+            <div class="wrap textblock-content row">
             <div class="post-meta">
                 <h3  class="p-l">
                     Reading time:
@@ -53,6 +54,7 @@ $author_bio = get_field('author_bio') ;
                     </ul>
                 </div>
             </div>
+               </div>
         </section>
     </div>
 
