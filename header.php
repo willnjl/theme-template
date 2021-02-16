@@ -20,7 +20,7 @@
 	<?php wp_head(); ?>
 </head>
 
-<body>
+<body class="sidenav-open">
 
 <div id="page" class="site">
 	<header id="masthead" class="site-header">
@@ -53,6 +53,11 @@
 				<p class="p-s">
 					Fifteen Ten Ltd is a Limited Company in England and Wales. Registered Company Number 8016262. Registered Address Park House, 10 Park Street, Bristol, BS1 5HX. VAT registration number 170 2018 53.
 				</p>
+				<ul class="social-icons">
+					<li class="social-icon"><a href=""><span class="fa fa-twitter"></span></a></li>
+					<li class="social-icon"><a href=""><span class="fa fa-linkedin "></span></a></li>
+					<li class="social-icon"><a href=""><span class="fa fa-instagram "></span></a></li>
+				</ul>
 			</div>
 		</div>
 			<button class="hamburger hamburger--squeeze" type="button" id="navicon">
