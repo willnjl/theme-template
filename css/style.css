@@ -3957,7 +3957,7 @@ address.p-l {
 }
 
 .text-block__homepage--link a.btn-link {
-	padding-left: 12px;
+	margin-left: 1rem;
 	margin-bottom: auto;
 	margin-left: auto;
 }
