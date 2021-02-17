@@ -1,3 +1,11 @@
 @import "homepage";
 @import "content";
 @import "testimonial";
+
+.textblock__about {
+  .loop-container {
+    li {
+      margin-right: 1rem;
+    }
+  }
+}

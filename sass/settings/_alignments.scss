@@ -10,7 +10,7 @@ $bp-m: 720px;
 $bp-s: 500px;
 
 .padding {
-  padding: 4rem 0;
+  padding: 6rem 0;
 }
 .no-pad {
   padding-top: 0;
@@ -30,6 +30,10 @@ header {
   footer {
     height: unset;
     min-height: 100%;
+    padding: 4rem 4vw;
+  }
+
+  .padding {
     padding: 4rem 4vw;
   }
   header {

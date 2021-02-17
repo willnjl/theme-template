@@ -179,7 +179,7 @@ table {
 }
 
 .padding {
-	padding: 4rem 0;
+	padding: 6rem 0;
 }
 
 .no-pad {
@@ -200,6 +200,9 @@ header {
 	footer {
 		height: unset;
 		min-height: 100%;
+		padding: 4rem 4vw;
+	}
+	.padding {
 		padding: 4rem 4vw;
 	}
 	header {
@@ -4076,6 +4079,10 @@ address.p-l {
 	background-color: #f0f0f0;
 }
 
+.textblock__about .loop-container li {
+	margin-right: 1rem;
+}
+
 .site-branding {
 	z-index: 9999;
 	width: 55px;
@@ -4313,6 +4320,11 @@ address.p-l {
 	.values .loop-container li:nth-child(2) {
 		margin: 0 4rem;
 	}
+}
+
+.swiper-gallery-container {
+	padding: 5px 0;
+	overflow-x: hidden;
 }
 
 .loop-container {

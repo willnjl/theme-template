@@ -18,6 +18,10 @@ get_header();
     <div class="grey-bg">
         <?php get_template_part( 'template-parts/loops', 'values',  ); ?>
     </div>
+    <?php get_template_part( 'template-parts/loops', 'swiper-gallery',  ); ?>
+    <div class="grey-bg">
+        <?php get_template_part( 'template-parts/textblock', 'about',  ); ?>
+    </div>
 </main>
 
 <script>

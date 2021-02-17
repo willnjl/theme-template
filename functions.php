@@ -148,6 +148,7 @@ function fiteenten_scripts() {
 	wp_enqueue_script( 'fiteenten-parallax', get_template_directory_uri() . '/js/parallax.min.js', array(), _S_VERSION, true );
 	wp_enqueue_script( 'fiteenten-swiper', 'https://unpkg.com/swiper/swiper-bundle.min.js', array(), _S_VERSION, false );
 	wp_enqueue_script( 'fiteenten-app', get_template_directory_uri() . '/js/app.js', array(), _S_VERSION, true );
+	wp_enqueue_script( 'fiteenten-chocolat', get_template_directory_uri() . '/js/chocolat.js', array(), _S_VERSION, false );
 	 wp_deregister_script('wp-mediaelement');
    wp_deregister_style('wp-mediaelement');
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
