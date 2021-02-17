@@ -3,34 +3,30 @@
         <h1>
             our values
         </h1>
-        <ul class="loop-container">
+<?php
+if( have_rows('values_repeater') ): ?>
+    <ul class="loop-container">
+        <?php    while( have_rows('values_repeater') ) : the_row();
+            $header = get_sub_field('header');
+            $body = get_sub_field('body');
+        ?>
             <li>
                 <hr>
                 <h4 class="value_title">
-                    advanced tech & accesible outcome
+                    <?= $header ?>
                 </h4>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fermentum risus in placerat lobortis. Fusce laoreet lorem ac nibh aliquet, et vulputate sem dapibus.
+                    <?= $body ?>
                 </p>
             </li>
-            <li>
-                <hr>
-                <h4 class="value_title">
-                    advanced tech & accesible outcome
-                </h4>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fermentum risus in placerat lobortis. Fusce laoreet lorem ac nibh aliquet, et vulputate sem dapibus.
-                </p>
-            </li>
-            <li>
-                <hr>
-                <h4 class="value_title">
-                    advanced tech & accesible outcome
-                </h4>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fermentum risus in placerat lobortis. Fusce laoreet lorem ac nibh aliquet, et vulputate sem dapibus.
-                </p>
-            </li>
+        <?php // End loop.
+        endwhile; ?>
         </ul>
-    </div>
+        <?php
+    else :
+       echo "add values";
+    endif;
+    ?>
+</div>
 </section>
+        
