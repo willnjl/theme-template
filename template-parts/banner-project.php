@@ -38,29 +38,16 @@
         slidesPerView: "auto",
         loop: true,
         spaceBetween: 1,
-        speed: 25000,
+        speed: 20000,
+        spaceBetween: 5,
         autoplay: {
             delay: 0
         },
-        // slidesPerView:'auto',
+        slidesPerView:'auto',
         allowTouchMove: false,
-        loopedSlides: 2,
+       loopedSlides: 30,
         disableOnInteraction: true,
                breakpoints: {
-            500:{
-            loopedSlides: 6,
-
-            },
-            800:{
-            loopedSlides: 8,
-
-            },
-            1000: {
-            loopedSlides: 12,
-            },
-            1200: {
-            loopedSlides: 15,
-            },
         },
     });
 

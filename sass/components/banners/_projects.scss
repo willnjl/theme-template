@@ -2,7 +2,6 @@
   padding-top: 4rem;
   color: black;
   position: relative;
-
   gap: 1rem;
   p {
     width: 50%;
@@ -46,7 +45,6 @@
 .project-title {
   top: 0;
   left: 0;
-
   width: 200%;
   text-overflow: clip;
   white-space: nowrap;
@@ -60,19 +58,24 @@
   top: 0;
   left: 0;
   z-index: -1;
+  margin: 0;
+  padding: 0;
 }
 .swiper-project-title {
+  margin: 0;
+  padding: 0;
   position: relative;
   .swiper-slide {
+    overflow-y: hidden;
     min-width: 30px;
-    padding: 0;
-    margin: 0;
     font-size: 15rem;
+    line-height: 10rem;
     color: $grey;
     background-color: white;
     text-transform: uppercase;
-    font-weight: 600;
+
     width: unset;
+    font-family: $font-secondary;
   }
   position: relative;
   .swiper-slide.space {

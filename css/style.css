@@ -3419,23 +3419,27 @@ section {
 	top: 0;
 	left: 0;
 	z-index: -1;
+	margin: 0;
+	padding: 0;
 }
 
 .swiper-project-title {
+	margin: 0;
+	padding: 0;
 	position: relative;
 	position: relative;
 }
 
 .swiper-project-title .swiper-slide {
+	overflow-y: hidden;
 	min-width: 30px;
-	padding: 0;
-	margin: 0;
 	font-size: 15rem;
+	line-height: 10rem;
 	color: #f0f0f0;
 	background-color: white;
 	text-transform: uppercase;
-	font-weight: 600;
 	width: unset;
+	font-family: "Compacta";
 }
 
 .swiper-project-title .swiper-slide.space {
@@ -3571,23 +3575,27 @@ section {
 	top: 0;
 	left: 0;
 	z-index: -1;
+	margin: 0;
+	padding: 0;
 }
 
 .swiper-project-title {
+	margin: 0;
+	padding: 0;
 	position: relative;
 	position: relative;
 }
 
 .swiper-project-title .swiper-slide {
+	overflow-y: hidden;
 	min-width: 30px;
-	padding: 0;
-	margin: 0;
 	font-size: 15rem;
+	line-height: 10rem;
 	color: #f0f0f0;
 	background-color: white;
 	text-transform: uppercase;
-	font-weight: 600;
 	width: unset;
+	font-family: "Compacta";
 }
 
 .swiper-project-title .swiper-slide.space {
