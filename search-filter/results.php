@@ -30,39 +30,37 @@ if ( ! defined( 'ABSPATH' ) ) {
 get_header();
 ?>
 
-<section class="">
-    <div class="">
-        <?php
-if ( $query->have_posts() ) :?>
-				<?php while($query->have_posts()): $query->the_post(); ?>
-					<!-- 
-						Content here 
-					-->
-				<?php endwhile; wp_reset_query() ?>
-			</div>
-		</section>  
-	Page <?php echo $query->query['paged']; ?> of <?php echo $query->max_num_pages; ?><br />
-	
-	<div class="pagination">
+<div class="padding grey-bg--bottom">
+	<div class="wrap">
 		
-		<div class="nav-previous"><?php next_posts_link( 'Older posts', $query->max_num_pages ); ?></div>
-		<div class="nav-next"><?php previous_posts_link( 'Newer posts' ); ?></div>
-		<?php
-			/* example code for using the wp_pagenavi plugin */
-			if (function_exists('wp_pagenavi'))
-			{
-				echo "<br />";
-				wp_pagenavi( array( 'query' => $query ) );
-			}
-		?>
-	</div>
-	<?php else :?>
-<h3>No Results</h3>
-
-<?php endif;?>
-        
-        	</div>
-</section>  
+			<ul class="loop--two-col">
+				<?php
+		if ( $query->have_posts() ) :?>
+					<?php while($query->have_posts()): $query->the_post(); ?>
+						<?php get_template_part( 'template-parts/content',  'post-card' ) ?>
+					<?php endwhile; wp_reset_query() ?>
+				
+		</ul>
+			<p class="link">	Page <?php echo $query->query['paged']; ?> of <?php echo $query->max_num_pages; ?><br /> </p>
+				
+				<div class="pagination">
+					
+					<div class="nav-previous"><?php next_posts_link( 'Older posts', $query->max_num_pages ); ?></div>
+					<div class="nav-next"><?php previous_posts_link( 'Newer posts' ); ?></div>
+					<?php
+				/* example code for using the wp_pagenavi plugin */
+				if (function_exists('wp_pagenavi'))
+				{
+					echo "<br />";
+					wp_pagenavi( array( 'query' => $query ) );
+				}
+				?>
+			</div>
+		<?php else :?>
+			<h3>No Results</h3>
+			
+			<?php endif;?>
+			
 
 <script>
 	let pagi = document.querySelector('.wp-pagenavi');

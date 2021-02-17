@@ -1,0 +1,48 @@
+.sf-field-category {
+  ul {
+    display: flex;
+    justify-content: space-between;
+    // flex-wrap: wrap;
+  }
+
+  .sf-input-radio {
+    visibility: hidden;
+    visibility: hidden;
+    height: 0;
+  }
+
+  .sf-level-0 {
+    cursor: pointer;
+    flex-grow: 1;
+    text-align: left;
+    padding: 10px 1rem;
+    font-size: 0.75rem;
+    border: 2px solid $blue;
+    border-radius: $btn-radius;
+    color: $blue;
+    margin-right: 10px;
+
+    &:hover {
+      background-color: $blue;
+      color: white;
+      .sf-label-radio {
+        color: white;
+      }
+    }
+  }
+  .sf-option-active {
+    background-color: $blue;
+    .sf-label-radio {
+      color: white;
+    }
+  }
+  .sf-label-radio {
+    padding-left: 0 !important;
+  }
+
+  li {
+    &:first-child {
+      display: none;
+    }
+  }
+}
