@@ -29,8 +29,7 @@
         <div class="banner-points">
             <?= $heading_points ?>
         </div>
-    </div>
-
+        </div>
 </section>
 
 <script>

@@ -1,0 +1,16 @@
+.flexi {
+  .row {
+    margin-bottom: 2rem;
+    justify-content: space-between;
+    img {
+      object-fit: cover;
+    }
+  }
+}
+
+.flexi-two-cols {
+  gap: 1rem;
+  .col {
+    width: 50%;
+  }
+}

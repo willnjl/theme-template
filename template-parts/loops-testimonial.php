@@ -7,7 +7,7 @@
             </div>
             <div class="swiper-testimonial">
                 <ul class="swiper-wrapper">
-                    <li class="swiper-slide">
+                    <li class="swiper-slide testimonial">
                         <span class="open-quotes"></span>
                         <p class="p-l">
                             <q>
@@ -18,7 +18,7 @@
                             Billy Joe Armstrong, Client Name Ltd
                         </p>
                     </li>
-                    <li class="swiper-slide">
+                    <li class="swiper-slide testimonial">
                         <span class="open-quotes"></span>
                         <p class="p-l">
                             <q>

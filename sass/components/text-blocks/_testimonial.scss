@@ -1,11 +1,6 @@
-.swiper-testimonial {
-  display: flex;
-  width: 100%;
-
-  overflow-x: hidden;
-}
-.swiper-slide {
-  background-color: $grey;
+.testimonial {
+  // background-color: white;
+  border: 1px solid red;
   padding-left: 2rem;
   font-size: 18px;
   height: 100% !important;
@@ -23,5 +18,14 @@
     width: 55px;
     height: 55px;
     font-size: 8rem;
+  }
+}
+
+.swiper-testimonial {
+  display: flex;
+  width: 100%;
+  overflow-x: hidden;
+  .testimonial {
+    background-color: $grey;
   }
 }

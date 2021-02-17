@@ -3884,7 +3884,7 @@ address.p-l {
 	margin-left: auto;
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 500px) {
 	.text-block__homepage--link p {
 		width: 100%;
 		margin-bottom: 2rem;
@@ -3947,6 +3947,40 @@ address.p-l {
 
 .textblock-content .body .shares li {
 	line-height: 1.5rem;
+}
+
+.testimonial {
+	border: 1px solid red;
+	padding-left: 2rem;
+	font-size: 18px;
+	height: 100% !important;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.testimonial p {
+	line-height: 2rem;
+}
+
+.testimonial .open-quotes {
+	font-family: "Graphik";
+	width: 55px;
+	height: 55px;
+	font-size: 8rem;
+}
+
+.swiper-testimonial {
+	display: flex;
+	width: 100%;
+	overflow-x: hidden;
+}
+
+.swiper-testimonial .testimonial {
+	background-color: #f0f0f0;
 }
 
 .site-branding {
@@ -4065,6 +4099,23 @@ address.p-l {
 	}
 }
 
+.flexi .row {
+	margin-bottom: 2rem;
+	justify-content: space-between;
+}
+
+.flexi .row img {
+	object-fit: cover;
+}
+
+.flexi-two-cols {
+	gap: 1rem;
+}
+
+.flexi-two-cols .col {
+	width: 50%;
+}
+
 .loop--two-col {
 	display: flex;
 	flex-wrap: wrap;
@@ -4133,36 +4184,6 @@ address.p-l {
 
 .post-slide p {
 	margin-top: 1rem;
-}
-
-.swiper-testimonial {
-	display: flex;
-	width: 100%;
-	overflow-x: hidden;
-}
-
-.swiper-slide {
-	background-color: #f0f0f0;
-	padding-left: 2rem;
-	font-size: 18px;
-	height: 100% !important;
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: -webkit-flex;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-}
-
-.swiper-slide p {
-	line-height: 2rem;
-}
-
-.swiper-slide .open-quotes {
-	font-family: "Graphik";
-	width: 55px;
-	height: 55px;
-	font-size: 8rem;
 }
 
 .loop-container {
