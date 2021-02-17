@@ -44,8 +44,20 @@
         },
         // slidesPerView:'auto',
         allowTouchMove: false,
+        loopedSlides: 2,
         disableOnInteraction: true,
                breakpoints: {
+            500:{
+            loopedSlides: 6,
+
+            },
+            800:{
+            loopedSlides: 8,
+
+            },
+            1000: {
+            loopedSlides: 12,
+            },
             1200: {
             loopedSlides: 15,
             },

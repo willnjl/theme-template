@@ -3340,7 +3340,6 @@ section {
 	padding-top: 4rem;
 	color: black;
 	position: relative;
-	overflow: hidden;
 	gap: 1rem;
 }
 
@@ -3393,6 +3392,7 @@ section {
 }
 
 .project-marquee-container {
+	overflow-x: hidden;
 	top: 0;
 	left: 0;
 	z-index: -1;
@@ -3493,7 +3493,6 @@ section {
 	padding-top: 4rem;
 	color: black;
 	position: relative;
-	overflow: hidden;
 	gap: 1rem;
 }
 
@@ -3546,6 +3545,7 @@ section {
 }
 
 .project-marquee-container {
+	overflow-x: hidden;
 	top: 0;
 	left: 0;
 	z-index: -1;

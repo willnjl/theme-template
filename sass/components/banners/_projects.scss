@@ -2,7 +2,7 @@
   padding-top: 4rem;
   color: black;
   position: relative;
-  overflow: hidden;
+
   gap: 1rem;
   p {
     width: 50%;
@@ -56,7 +56,7 @@
 }
 
 .project-marquee-container {
-  // position: absolute;
+  overflow-x: hidden;
   top: 0;
   left: 0;
   z-index: -1;
