@@ -10,12 +10,29 @@
             <?php
                 $title = get_the_title();
                 $letters = str_split($title);
-    
-                foreach($letters as $letter) : ?>
-                <span class="swiper-slide <?php if($letter === " "){echo "space";};?>">
-                    <?= $letter ?>
-                </span>
-            <? endforeach; ?>
+                $count = count($letters);
+                $i = $count;
+                if($count < 17){
+                    do{
+                    foreach($letters as $letter){
+                        $string = "<span class='swiper-slide '";
+                        $string .= ($letter === " " ? "space" : "");
+                        $string .= ">". $letter . "</span>";
+                        echo $string;
+                    }
+                    echo "<span class='swiper-slide space'></span>";
+                    $i += $count;
+                }while($i < 17);
+            }
+          
+            foreach($letters as $letter){
+                $string = "<span class='swiper-slide '";
+                $string .= ($letter === " " ? "space" : "");
+                $string .= ">". $letter . "</span>";
+                echo $string;
+            }
+                ?>
+           
             <span class="swiper-slide space" ></span>
         </div>
     </div>
