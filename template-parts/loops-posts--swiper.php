@@ -103,6 +103,7 @@
 
 const swiper = new Swiper('.swiper-container', {
    direction: 'horizontal',
+   spaceBetween: 31,
    centerSlide: false,
    freeMode: true,
    width: 400,

@@ -3209,17 +3209,40 @@ section {
 }
 
 /* The navigation menu links */
-.sidenav .menu a {
-	text-decoration: none;
-	font-weight: 500;
+.menu > .menu-item {
+	font-weight: 600;
 	font-size: 1.2em;
 	letter-spacing: 2px;
-	padding: 1.2rem 0rem;
-	border-bottom: 1px solid #121212;
+	min-height: 4.25rem;
+	padding: 1rem 0;
+	border-bottom: 1px solid #101010;
 	text-transform: lowercase;
 	color: white;
-	display: block;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 	transition: 0.3s;
+}
+
+.menu > .menu-item a:hover {
+	text-decoration: none;
+}
+
+.sub-menu {
+	margin-top: 12px;
+}
+
+.menu > .menu-item > .sub-menu > .menu-item {
+	font-weight: 200;
+	font-size: 0.9rem;
+	display: inline-block;
+}
+
+.menu > .menu-item > .sub-menu > .menu-item:nth-child(1n + 2):before {
+	content: "|";
+	display: inline-block;
+	padding: 0 0.5rem;
+	color: #4e4e4e;
 }
 
 /* When you mouse over the navigation links, change their color */
@@ -4105,7 +4128,7 @@ address.p-l {
 	width: 100%;
 	min-width: 200px;
 	height: 100%;
-	border: 1px solid #333;
+	border: 1px solid #101010;
 	display: flex;
 	align-items: center;
 	justify-content: center;
