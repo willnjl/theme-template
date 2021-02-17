@@ -9,8 +9,26 @@
 }
 
 .flexi-two-cols {
-  gap: 1rem;
   .col {
     width: 50%;
+    &:nth-child(2n + 1) {
+      padding-right: 0.5vw;
+    }
+    &:nth-child(2n) {
+      padding-left: 0.5vw;
+    }
   }
 }
+
+// @media screen and (max-width: $bp-m) {
+//   .flexi {
+//     .row {
+//       flex-direction: column;
+//     }
+//   }
+//   .flexi-two-cols {
+//     .col {
+//       width: 100%;
+//     }
+//   }
+// }

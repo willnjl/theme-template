@@ -29,17 +29,15 @@ if( have_rows('project_flex_content') ): ?>
             ?>
             <div class="row padding">
                 <div class="testimonial">
-                    <div class="two-thirds">
                         <span class="open-quotes"></span>
-                        <p class="p-l ">
-                            <q>
-                                <?= $body ?>
-                            </q>
-                        </p>
+                        <div class="two-thirds">
+                            <div class="testimonial__body">
+                                <?= $body ?>    
+                            </div>
+                        </div>
                         <p class="p-s">
                             <?= $author ?>
                         </p>
-                    </div>
                 </div>
             </div>
 

@@ -3,10 +3,11 @@
   color: black;
   position: relative;
   overflow: hidden;
+  gap: 1rem;
   p {
     width: 50%;
   }
-  .wrap {
+  .row {
     width: 100%;
     justify-content: space-between;
     height: 100%;
@@ -19,6 +20,29 @@
     margin-left: 2rem;
   }
 }
+
+@media screen and (max-width: $bp-l) {
+  .banner-project {
+    p {
+      width: 75%;
+    }
+    .row {
+      flex-direction: column;
+      // border: 1px solid red;
+    }
+
+    .banner-points {
+      width: 100%;
+      margin-left: auto;
+      text-align: right;
+      margin-top: 3rem;
+      ul {
+        width: 100%;
+      }
+    }
+  }
+}
+
 .project-title {
   top: 0;
   left: 0;

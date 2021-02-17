@@ -3034,10 +3034,16 @@ a.btn-link:after {
 	.four-cols .col {
 		width: 100%;
 	}
+	.two-thirds, .banner .text__container p, .banner--small .text__container p {
+		width: 75%;
+	}
 }
 
 @media only screen and (max-width: 500px) {
 	.col {
+		width: 100%;
+	}
+	.two-thirds, .banner .text__container p, .banner--small .text__container p {
 		width: 100%;
 	}
 }
@@ -3136,7 +3142,6 @@ section {
 	top: 0;
 	left: 0;
 	width: 100%;
-	padding: 12px;
 	height: 95px;
 }
 
@@ -3268,6 +3273,10 @@ section {
    Navicon
 ------------------------------------------------
 */
+#navicon:focus {
+	outline: 0;
+}
+
 #navicon {
 	z-index: 9999;
 }
@@ -3332,13 +3341,14 @@ section {
 	color: black;
 	position: relative;
 	overflow: hidden;
+	gap: 1rem;
 }
 
 .banner-project p {
 	width: 50%;
 }
 
-.banner-project .wrap {
+.banner-project .row {
 	width: 100%;
 	justify-content: space-between;
 	height: 100%;
@@ -3351,6 +3361,24 @@ section {
 
 .banner-project .banner-points ul {
 	line-height: 2rem;
+}
+
+@media screen and (max-width: 900px) {
+	.banner-project p {
+		width: 75%;
+	}
+	.banner-project .row {
+		flex-direction: column;
+	}
+	.banner-project .banner-points {
+		width: 100%;
+		margin-left: auto;
+		text-align: right;
+		margin-top: 3rem;
+	}
+	.banner-project .banner-points ul {
+		width: 100%;
+	}
 }
 
 .project-title {
@@ -3466,13 +3494,14 @@ section {
 	color: black;
 	position: relative;
 	overflow: hidden;
+	gap: 1rem;
 }
 
 .banner-project p {
 	width: 50%;
 }
 
-.banner-project .wrap {
+.banner-project .row {
 	width: 100%;
 	justify-content: space-between;
 	height: 100%;
@@ -3485,6 +3514,24 @@ section {
 
 .banner-project .banner-points ul {
 	line-height: 2rem;
+}
+
+@media screen and (max-width: 900px) {
+	.banner-project p {
+		width: 75%;
+	}
+	.banner-project .row {
+		flex-direction: column;
+	}
+	.banner-project .banner-points {
+		width: 100%;
+		margin-left: auto;
+		text-align: right;
+		margin-top: 3rem;
+	}
+	.banner-project .banner-points ul {
+		width: 100%;
+	}
 }
 
 .project-title {
@@ -3856,10 +3903,12 @@ address.p-l {
 }
 
 .open-quotes::before {
+	display: block;
 	content: "“";
 }
 
 .close-quotes::after {
+	display: block;
 	content: "”";
 }
 
@@ -3950,10 +3999,8 @@ address.p-l {
 }
 
 .testimonial {
-	border: 1px solid red;
 	padding-left: 2rem;
 	font-size: 18px;
-	height: 100% !important;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: -webkit-flex;
@@ -3962,11 +4009,12 @@ address.p-l {
 	justify-content: space-between;
 }
 
-.testimonial p {
-	line-height: 2rem;
+.testimonial .testimonial__body {
+	margin: 3rem 0;
 }
 
 .testimonial .open-quotes {
+	display: block;
 	font-family: "Graphik";
 	width: 55px;
 	height: 55px;
@@ -3980,6 +4028,7 @@ address.p-l {
 }
 
 .swiper-testimonial .testimonial {
+	height: 100% !important;
 	background-color: #f0f0f0;
 }
 
@@ -4108,12 +4157,16 @@ address.p-l {
 	object-fit: cover;
 }
 
-.flexi-two-cols {
-	gap: 1rem;
-}
-
 .flexi-two-cols .col {
 	width: 50%;
+}
+
+.flexi-two-cols .col:nth-child(2n + 1) {
+	padding-right: 0.5vw;
+}
+
+.flexi-two-cols .col:nth-child(2n) {
+	padding-left: 0.5vw;
 }
 
 .loop--two-col {
