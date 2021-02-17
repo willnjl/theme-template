@@ -2,11 +2,27 @@
 }
 
 .text-block__homepage--link {
+  .two-thirds {
+    margin: 0;
+  }
   a.btn-link {
+    padding-left: 12px;
+    margin-bottom: auto;
     margin-left: auto;
   }
 }
 
+@media screen and (max-width: $bp-m) {
+  .text-block__homepage--link {
+    .row {
+      flex-direction: column;
+
+      a.btn-link {
+        margin-top: 2rem;
+      }
+    }
+  }
+}
 @media screen and (max-width: $bp-s) {
   .text-block__homepage--link {
     p {

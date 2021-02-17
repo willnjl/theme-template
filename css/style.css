@@ -3952,8 +3952,23 @@ address.p-l {
 	transition: 0.2s;
 }
 
+.text-block__homepage--link .two-thirds, .text-block__homepage--link .banner .text__container p, .banner .text__container .text-block__homepage--link p, .text-block__homepage--link .banner--small .text__container p, .banner--small .text__container .text-block__homepage--link p {
+	margin: 0;
+}
+
 .text-block__homepage--link a.btn-link {
+	padding-left: 12px;
+	margin-bottom: auto;
 	margin-left: auto;
+}
+
+@media screen and (max-width: 720px) {
+	.text-block__homepage--link .row {
+		flex-direction: column;
+	}
+	.text-block__homepage--link .row a.btn-link {
+		margin-top: 2rem;
+	}
 }
 
 @media screen and (max-width: 500px) {
