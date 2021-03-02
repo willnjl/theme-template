@@ -42,7 +42,7 @@
   margin-top: 0px;
 }
 
-@media only screen and (max-width: 940px) {
+@media only screen and (max-width: $bp-l) {
   .two-cols .col,
   .three-cols .col {
     width: 100%;
@@ -54,6 +54,11 @@
     float: none;
     clear: none;
     margin-bottom: 1em;
+  }
+
+  .two-thirds,
+  .one-third {
+    width: 100%;
   }
 }
 

@@ -1,40 +1,36 @@
-.btn {
-  cursor: pointer;
+.btn-social {
+  width: 35px;
+  height: 35px;
+  background-color: white;
+  margin-bottom: 10px;
   display: inline-block;
-  text-decoration: none;
-  background-color: $blue;
-  color: white;
+  svg {
+    fill: $blue;
+  }
+
+  border: 1px solid white;
+
+  &:hover {
+    transition: 0.3s;
+    width: 37px;
+    height: 37px;
+  }
 }
 
-.btn-info {
-  font-size: 0.9em;
-  padding: 10px 15px;
-  border: 2px solid white;
-  i {
-    margin-left: 3px;
-    transition: 0.5s;
-  }
-  &:hover {
-    background-color: #6cb1da;
-    i {
-      margin-left: 10px;
-    }
+#insta {
+  stroke: $blue;
+  .st0 {
+    fill: white;
   }
 }
 
 .btn-submit {
-  float: left;
-  width: 100%;
-  max-width: 150px;
-  padding: 13px;
-  i {
-    margin-left: 3px;
-    transition: 0.5s;
-  }
-  &:hover {
-    background-color: #6cb1da;
-    i {
-      margin-left: 10px;
-    }
-  }
+  background-color: $blue;
+  padding: 10px 2rem;
+  border: 0;
+  color: white;
+  font-size: 1.2rem;
+  width: 175px;
+  margin-top: 1rem;
+  margin-left: auto;
 }

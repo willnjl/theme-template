@@ -13,10 +13,24 @@ ul li {
   list-style-type: none;
 }
 
+img {
+  width: 100%;
+}
+
 a,
 a:visited,
 a:active {
+  text-decoration: inherit;
   color: inherit;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+button,
+input {
+  -webkit-appearance: none;
 }
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -108,7 +122,7 @@ video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
+  // font-size: 100%;
   font: inherit;
   vertical-align: baseline;
 }

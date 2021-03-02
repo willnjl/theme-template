@@ -40,6 +40,10 @@
   padding: $padding;
 }
 
+.no-pad {
+  padding-top: 0 !important;
+}
+
 .row,
 .flex {
   display: flex;

@@ -2,23 +2,21 @@
 
 $line-height: 1.6rem;
 
-body,
-html {
-}
-
 body {
   color: #000e1e;
-  font-weight: 200;
-  font-family: neusa-next-std, sans-serif;
+  font-weight: 300;
+  font-family: Helvetica, arial, sans-serif;
 }
 
 h1 {
-  font-size: 3.4rem;
+  line-height: 3.4rem;
+  font-size: 2.5rem;
   font-weight: 700;
 }
 
 h2 {
   font-size: 2.2rem;
+  font-weight: 600;
 }
 
 h3 {
@@ -28,14 +26,46 @@ h3 {
 
 h4 {
   font-size: 1.8rem;
+  font-weight: 600;
 }
 
 h5 {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
+  font-weight: 600;
 }
 
 p {
   line-height: $line-height;
   margin-bottom: 1rem;
   font-weight: 200;
+}
+
+body,
+html {
+  font-size: 12px;
+}
+
+@media screen and (min-width: $bp-s) {
+  body,
+  html {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: $bp-m) {
+  body,
+  html {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: $bp-l) {
+  body,
+  html {
+    font-size: 17px;
+  }
+}
+@media screen and (min-width: $bp-xl) {
+  body,
+  html {
+    font-size: 18px;
+  }
 }

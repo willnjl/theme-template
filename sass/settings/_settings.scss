@@ -5,7 +5,8 @@
 @import "animation";
 @import "utlities";
 @import "packages/swiper";
-$hamburger-layer-color: $blue;
-
-$hamburger-active-layer-color: $blue;
+$hamburger-layer-color: white;
+$hamburger-active-layer-color: white;
 @import "packages/hamburgers/hamburgers.scss";
+@import "packages/chocolat/chocolat";
+@import "packages/chocolat/options";

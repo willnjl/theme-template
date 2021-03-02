@@ -1,7 +1,8 @@
 $width: 35vw;
 
-@media screen and (max-width: $bp-l) {
+@media screen and (max-width: $bp-xl) {
   .sidenav {
+    opacity: 0;
     transform: translateX(-$width);
     height: 100%; /* 100% Full-height */
     width: $width; /* 0 width - change this with JavaScript */
@@ -9,9 +10,10 @@ $width: 35vw;
     z-index: 6; /* Stay on top */
     top: 0; /* Stay at the top */
     left: 0;
-    background-color: $menu; /* Black*/
+    background-color: $blue; /* Black*/
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 60px; /* Place content 60px from the top */
+    transition: transform 0.5s; /* 0.5 second transition effect to slide in the sidenav */
   }
 
   @media screen and (max-width: 650px) {
@@ -33,9 +35,16 @@ $width: 35vw;
     }
   }
   .sidenav-open {
-    #sidenav {
-      transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    .sidenav {
+      opacity: 1;
       transform: translateX(0);
+    }
+  }
+
+  .sidenav-open > #menu-toggle {
+    svg {
+      transition: fill 1s;
+      fill: white;
     }
   }
 
@@ -51,20 +60,16 @@ $width: 35vw;
     letter-spacing: 2px;
     padding: 1rem 1.2rem;
     border-top: 1px solid white;
-    // text-align: right;
+    text-transform: uppercase;
+    text-align: right;
     color: white;
     display: block;
     transition: 0.3s;
   }
 
-  .sidenav li {
-    width: 100%;
-  }
-
   /* When you mouse over the navigation links, change their color */
   .sidenav a:hover {
-    color: $blue;
-    background-color: $mask;
+    // background-color: $red-darken;
   }
 
   /* Position and style the close button (top right corner) */
@@ -79,15 +84,5 @@ $width: 35vw;
   /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
   #main {
     transition: margin-left 0.5s;
-  }
-
-  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-  @media screen and (max-height: 450px) {
-    .sidenav {
-      padding-top: 15px;
-    }
-    .sidenav a {
-      font-size: 18px;
-    }
   }
 }

@@ -1,0 +1,59 @@
+.form {
+}
+
+.wpcf7 {
+  br {
+    display: none;
+  }
+  label {
+    display: inline-block;
+    width: 150px;
+    margin-right: 20px;
+  }
+}
+.wpcf7-form-control {
+  display: inline-block;
+}
+
+.field {
+  display: flex;
+  justify-content: space-between;
+  input {
+    margin-bottom: 2rem;
+    padding: 10px;
+    display: inline-block;
+  }
+}
+
+.wpcf7-submit {
+  @extend .btn-submit;
+}
+
+.submit-container {
+  display: flex;
+}
+
+@media screen and (max-width: $bp-s) {
+  .form {
+    width: 100%;
+  }
+  .field {
+    margin: 0 auto;
+    flex-direction: column;
+    margin: auto;
+    width: 100%;
+  }
+
+  br {
+    display: block;
+  }
+  label {
+    margin-bottom: 10px;
+  }
+  textarea {
+    width: 100%;
+  }
+  .wpcf7-submit {
+    width: 100%;
+  }
+}

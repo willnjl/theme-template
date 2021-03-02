@@ -1,24 +1,28 @@
 footer {
+  background-color: $blue;
   font-size: 0.8rem;
-  height: 215px;
+  height: 400px;
   color: white;
-  font-weight: 100;
-  line-height: $line-height;
-  .link {
-    color: $blue;
-  }
-}
 
-@media screen and (max-width: 940px) {
-  footer {
-    height: 100%;
-    padding: $padding;
-    .col {
-      width: 100%;
+  strong {
+    font-weight: 600;
+  }
+  p {
+    padding: 0;
+    margin: 0;
+  }
+  .row {
+    &:nth-child(1) {
+      border-bottom: 1px solid white;
     }
-  }
 
-  .logo--large {
-    margin-top: 2rem;
+    justify-content: space-between;
+    padding: 1rem 0;
+    .social-btns {
+      margin-top: auto;
+      .btn-social {
+        margin-left: 35px;
+      }
+    }
   }
 }
