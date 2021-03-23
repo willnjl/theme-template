@@ -55,6 +55,7 @@
   &::before,
   &::after {
     content: "";
+
     display: block;
   }
 
@@ -67,6 +68,13 @@
   }
 }
 
+.hamburger-inner.hb-black {
+  &,
+  &::before,
+  &::after {
+    background-color: #000;
+  }
+}
 .is-active {
   &:hover {
     @if $hamburger-hover-use-filter == true {

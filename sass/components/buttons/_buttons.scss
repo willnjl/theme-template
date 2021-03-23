@@ -1,36 +1,18 @@
-.btn-social {
-  width: 35px;
-  height: 35px;
-  background-color: white;
-  margin-bottom: 10px;
-  display: inline-block;
-  svg {
-    fill: $blue;
-  }
+$btn-radius: 50px;
+$btn-border: 3px solid;
 
-  border: 1px solid white;
-
-  &:hover {
-    transition: 0.3s;
-    width: 37px;
-    height: 37px;
-  }
+.btn {
+  font-weight: 600;
+  position: relative;
+  display: flex;
+  align-items: center;
+  border-radius: $btn-radius;
 }
 
-#insta {
-  stroke: $blue;
-  .st0 {
-    fill: white;
+.btn-3d {
+  box-shadow: 2px 2px $blue;
+  &:active {
+    box-shadow: 0px 0px;
+    transform: translate(2px, 2px);
   }
-}
-
-.btn-submit {
-  background-color: $blue;
-  padding: 10px 2rem;
-  border: 0;
-  color: white;
-  font-size: 1.2rem;
-  width: 175px;
-  margin-top: 1rem;
-  margin-left: auto;
 }

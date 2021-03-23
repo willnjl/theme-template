@@ -1,5 +1,6 @@
 @import "cols";
 @import "sections";
+
 .cf {
   position: relative;
 }
@@ -32,19 +33,43 @@
   position: relative;
 }
 
-.align-center {
-  display: flex;
-  align-items: center;
-}
-.padding {
-  padding: $padding;
-}
-
-.no-pad {
-  padding-top: 0 !important;
-}
-
 .row,
-.flex {
+.flex,
+.row-m,
+.row-s,
+.row-l {
   display: flex;
+}
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.grid {
+  // Fallback
+  display: flex;
+  flex-direction: column;
+}
+
+.grid {
+  display: grid;
+}
+
+@media screen and (max-width: $bp-l) {
+  .row-l {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: $bp-m) {
+  .grid {
+    display: flex;
+  }
+  .row-m {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: $bp-s) {
+  .row-s {
+    flex-direction: column;
+  }
 }

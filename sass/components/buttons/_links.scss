@@ -1,14 +1,5 @@
-.scroll-down {
-  display: block;
-  text-transform: uppercase;
-  text-decoration: none;
-  letter-spacing: 4px;
-  &::before {
-    @extend .icon-before;
-    background-image: url("../../../images/scroll-down.png");
-    width: 27px;
-    height: 27px;
-    margin-right: 12px;
-    top: 7px;
-  }
+a.link,
+.link {
+  color: $blue;
+  text-decoration: underline;
 }

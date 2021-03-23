@@ -1,4 +1,4 @@
-<?php
+ <?php
 /**
  * The header for our theme
  *
@@ -20,40 +20,41 @@
 	<?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?>>
-<?php wp_body_open(); ?>
-<div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'fiteenten' ); ?></a>
+<body class="">
+	<div id="page" class="site">
+	<header id="masthead" class="site-header header-pad">
+		<div class="wrap nav-bar ">
+			<div class="site-branding">
+				<?php get_template_part( 'template-parts/component', 'logo',  ); ?>
+			</div><!-- .site-branding -->
+			 
+			<div class="sidenav">
+				<div class="wrap">
+					<nav id="site-navigation" class="main-navigation">
+						<?php
+							wp_nav_menu(
+								array(
+									'theme_location' => 'menu-1',
+									'menu_id'        => 'primary-menu',
+									)
+								);
+						?>
+					</nav><!-- #site-navigation -->
+								<!-- additonal Info -->
+				</div>
+			</div>
+			<div class="navicon-container header-pad">
+					<div class="wrap">
+					<button class="hamburger hamburger--squeeze" type="button" id="navicon">
+						<div class="container">
+							<span class="hamburger-box">
+								<span class="hamburger-inner"></span>
+							</span>
+						</div>
+					</button>
+				</div>
+				</div>
+		</div>
+		<div class="bg-img" id="nav-mask"></div>
 
-	<header id="masthead" class="site-header">
-		<div class="site-branding">
-			<?php
-			the_custom_logo();
-			if ( is_front_page() && is_home() ) :
-				?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-				<?php
-			else :
-				?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-				<?php
-			endif;
-			$fiteenten_description = get_bloginfo( 'description', 'display' );
-			if ( $fiteenten_description || is_customize_preview() ) :
-				?>
-				<p class="site-description"><?php echo $fiteenten_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
-			<?php endif; ?>
-		</div><!-- .site-branding -->
-
-		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'fiteenten' ); ?></button>
-			<?php
-			wp_nav_menu(
-				array(
-					'theme_location' => 'menu-1',
-					'menu_id'        => 'primary-menu',
-				)
-			);
-			?>
-		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->

@@ -1,8 +1,14 @@
 .col {
-  float: left;
-  padding: 0 20px;
-  box-sizing: border-box;
   display: block;
+  padding-right: 12px;
+  &:last-child {
+    padding-right: 0;
+  }
+}
+
+.col > *:first-child {
+  padding-top: 0px;
+  margin-top: 0px;
 }
 
 .five-cols .col {
@@ -33,42 +39,41 @@
   width: 33.33%;
 }
 
-.text-block.col {
-  padding: 4em;
+.flex-1 {
+  flex: 1;
 }
-
-.col > *:first-child {
-  padding-top: 0px;
-  margin-top: 0px;
+.flex-2 {
+  flex: 2;
 }
-
+.flex-3 {
+  flex: 3;
+}
+.flex-4 {
+  flex: 4;
+}
 @media only screen and (max-width: $bp-l) {
-  .two-cols .col,
-  .three-cols .col {
-    width: 100%;
-    float: none;
-    margin-bottom: 1em;
-  }
-  .four-cols .col {
-    width: 50%;
-    float: none;
-    clear: none;
-    margin-bottom: 1em;
-  }
-
-  .two-thirds,
-  .one-third {
-    width: 100%;
+  .three-cols,
+  .four-cols,
+  .five-cols {
+    .col {
+      width: 100%;
+      margin-bottom: 1em;
+    }
   }
 }
 
-@media only screen and (max-width: 720px) {
-  .four-cols .col {
-    width: 100%;
+@media only screen and (max-width: $bp-m) {
+  .two-cols {
+    .col {
+      width: 100%;
+    }
+  }
+  .two-thirds {
+    width: 75%;
   }
 }
-@media only screen and (max-width: 500px) {
-  .col {
+@media only screen and (max-width: $bp-s) {
+  .two-thirds {
     width: 100%;
   }
 }

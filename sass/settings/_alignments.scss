@@ -1,19 +1,30 @@
 $padding: 6rem 6vw;
-$wrap-width-large: 1250px;
+$wrap-width-large: 1220px;
 $wrap-width-small: 900px;
+
+$nav-height: 95px;
 
 $bp-xl: 1200px;
 $bp-l: 900px;
 $bp-m: 720px;
-$bp-s: 550px;
+$bp-s: 500px;
+
+$border-radius: 15px;
+
+.padding {
+  padding: 6rem 0;
+}
+.no-pad {
+  padding-top: 0;
+}
+
+.header-pad {
+  padding: 1rem 6vw;
+}
 
 section,
 footer {
   padding: $padding;
-}
-
-header {
-  padding: 15px 6vw;
 }
 
 @media screen and (max-width: $bp-xl) {
@@ -23,25 +34,35 @@ header {
     min-height: 100%;
     padding: 4rem 4vw;
   }
-  header {
+
+  .padding {
+    padding: 4rem 4vw;
+  }
+  .header-pad {
     padding: 10px 4vw;
   }
 }
 @media screen and (max-width: $bp-m) {
+  .padding {
+    padding: 2rem 0;
+  }
   section,
   footer {
     padding: 2rem 2rem;
   }
-  header {
+  .header-pad {
     padding: 10px 2rem;
   }
 }
 @media screen and (max-width: $bp-s) {
+  .padding {
+    padding: 2rem 0;
+  }
   section,
   footer {
     padding: 4rem 1rem;
   }
-  header {
+  .header-pad {
     padding: 10px 1rem;
   }
 }

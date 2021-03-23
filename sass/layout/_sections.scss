@@ -3,14 +3,26 @@ section {
   position: relative;
 }
 
-.section-mid {
-  height: 85vh;
-  min-height: 450px;
+.grey-bg {
+  background: $grey;
 }
-
-.section-link {
+.grey-bg--bottom {
   position: relative;
-  display: inline-block;
-  flex-direction: column;
-  width: 100%;
+  background: white;
+  background: linear-gradient(0deg, $grey calc(50% + 4rem), white 50%);
+  z-index: 1;
+}
+.grey-bg--bottom--qtr {
+  position: relative;
+  background: white;
+  background: linear-gradient(0deg, $grey calc(25% + 4rem), white 75%);
+  z-index: 1;
+}
+.grey-bg--top {
+  background: $grey;
+  background: linear-gradient(0deg, white 50%, $grey 50%);
+}
+.grey-bg--top--qtr {
+  background: $grey;
+  background: linear-gradient(0deg, white 75%, $grey 25%);
 }

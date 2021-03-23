@@ -5,8 +5,10 @@
 @import "animation";
 @import "utlities";
 @import "packages/swiper";
-$hamburger-layer-color: white;
-$hamburger-active-layer-color: white;
+$hamburger-layer-color: blue;
+$hamburger-active-layer-color: blue;
+// $hamburger-layer-width: 30px;
 @import "packages/hamburgers/hamburgers.scss";
-@import "packages/chocolat/chocolat";
-@import "packages/chocolat/options";
+// @import "packages/chocolat/chocolat";
+// @import "packages/chocolat/options";
+@import "packages/font-awesome";

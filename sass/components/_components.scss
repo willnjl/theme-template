@@ -3,6 +3,7 @@
 
 @import "nav/overlay";
 @import "nav/navicon";
+@import "nav/logo";
 /* banners */
 @import "banners/banners";
 @import "banners/banners";
@@ -12,14 +13,16 @@
 @import "buttons/links";
 /* forms */
 @import "forms/forms";
+@import "forms/forms";
 /* forms */
 @import "footer/footer";
 
 // typography
 @import "typography/spans";
 
-@import "text-blocks/text-blocks.scss";
+@import "shapes/shapes";
+@import "text-blocks/text-blocks";
 
-@import "media/images.scss";
+@import "media/media";
 
 @import "loops/loops";

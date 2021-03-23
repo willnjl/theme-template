@@ -1,21 +1,3 @@
-@import "wpcf7";
-
-.checkers {
-  clear: both;
-  display: block;
-}
-
-.checkbox {
-  float: left;
-  width: 20px;
-  height: 20px;
-}
-
-.check-label {
-  float: left;
-  font-size: 0.8em;
-}
-
-.checkboxes {
-  margin-bottom: 2em;
-}
+@import "default";
+@import "search";
+@import "wpf7";

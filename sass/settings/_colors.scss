@@ -1,18 +1,23 @@
-$blue: #005392;
-$blue-light: #0074cd;
-$blue-grey: #ebf1f6;
-$mask: #121212aa;
-$menu: #121212ee;
-
-$yellow: #ebc817;
-$yellow-house: #fcdd3d;
-$grey: #eeeeee;
+$blue: #0030ff;
+$text-default: #28354f;
+$black: #000;
+$offblack: #101010;
+$yellow: #ffde00;
+$grey: #f0f0f0;
 $text-grey: #959595;
 
 :root {
-  background-color: $grey;
+  background-color: white;
 }
 
 .white-bg {
   background-color: white;
+}
+.blue-bg {
+  background-color: #27354f;
+  color: white;
+}
+
+.grey-bg {
+  background-color: $grey;
 }

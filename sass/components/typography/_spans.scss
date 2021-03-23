@@ -1,14 +1,28 @@
-.span-blue {
-  color: $blue !important;
+.span-seconadary {
+  font-family: $font-secondary;
 }
 
-.span-roman {
-  font-family: "Times New Roman", Times, serif;
-}
-.ul {
-  text-decoration: underline;
+.span-author {
+  color: $text-grey;
+  font-size: 0.75rem;
+  text-transform: uppercase;
 }
 
+.open-quotes::before {
+  display: block;
+  content: "“";
+}
+
+.close-quotes::after {
+  display: block;
+  content: "”";
+}
+
+.middot::after {
+  content: " \00B7";
+  margin: 0 1rem;
+  font-size: 2rem;
+}
 .span-underline {
   top: -10px;
   padding-bottom: -10px;
@@ -21,18 +35,4 @@
     background-position: 100% 100%; /*OR bottom right*/
     background-size: 100% 10px;
   }
-}
-
-.span-author {
-  color: $text-grey;
-  font-size: 0.75rem;
-  text-transform: uppercase;
-}
-
-.open-quotes::before {
-  content: "“";
-}
-
-.close-quotes::after {
-  content: "”";
 }

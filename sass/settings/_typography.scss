@@ -1,15 +1,21 @@
-@import url("https://use.typekit.net/avp5hnx.css");
+// @import url("https://use.typekit.net/gtf0uam.css");
 
-$line-height: 1.6rem;
+$font-primary: proxima-nova, sans-serif; //, Helvetica, arial, sans-serif;
+$font-secondary: ""; //, Helvetica, arial, sans-serif;
+
+$p-xl: 1.6rem;
+$p-large: 1.3rem;
+$p-small: 0.9rem;
+
+$line-height: 1.8rem;
 
 body {
-  color: #000e1e;
-  font-weight: 300;
-  font-family: Helvetica, arial, sans-serif;
+  color: $text-default;
+  font-weight: 400;
+  font-family: $font-primary;
 }
 
 h1 {
-  line-height: 3.4rem;
   font-size: 2.5rem;
   font-weight: 700;
 }
@@ -36,36 +42,48 @@ h5 {
 
 p {
   line-height: $line-height;
-  margin-bottom: 1rem;
   font-weight: 200;
+  margin-bottom: 1rem;
 }
 
-body,
-html {
-  font-size: 12px;
+strong {
+  font-weight: 600;
 }
 
-@media screen and (min-width: $bp-s) {
-  body,
-  html {
-    font-size: 14px;
-  }
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 2px solid #fff;
+  margin: 1em 0;
+  padding: 0;
 }
-@media screen and (min-width: $bp-m) {
-  body,
-  html {
-    font-size: 16px;
-  }
+
+html,
+body {
+  font-size: 18px;
 }
-@media screen and (min-width: $bp-l) {
-  body,
-  html {
+
+@media screen and (max-width: $bp-m) {
+  html,
+  body {
     font-size: 17px;
   }
 }
-@media screen and (min-width: $bp-xl) {
-  body,
-  html {
-    font-size: 18px;
+@media screen and (max-width: $bp-s) {
+  html,
+  body {
+    font-size: 16px;
   }
+}
+
+.p-l {
+  font-size: $p_large;
+  line-height: 2.1rem;
+}
+.p-xl {
+  font-size: $p_xl;
+}
+.p-s {
+  font-size: 0.75rem;
 }

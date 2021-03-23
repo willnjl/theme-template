@@ -1,7 +1,7 @@
 $transition: opacity 1.5s, transform 1.2s;
 $transition-slow: opacity 5s, transform 30s;
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: $bp-s) {
   .swipe-left {
     transform: translateX(-100px);
   }
@@ -20,10 +20,10 @@ $transition-slow: opacity 5s, transform 30s;
   }
 }
 
-.transition {
+.trans {
   transition: $transition;
 }
-.transition--slow {
+.trans--slow {
   transition: $transition-slow;
 }
 
