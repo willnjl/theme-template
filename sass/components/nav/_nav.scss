@@ -1,3 +1,5 @@
+$header-bg: #efefef;
+
 .site-header {
   position: absolute;
   top: 0;
@@ -7,20 +9,26 @@
   .flex {
     justify-content: space-between;
   }
+  background-color: $header-bg;
 }
 
 .main-navigation {
-  height: 100%;
-  align-items: center;
   ul {
     @extend .row-l;
-    align-items: center;
-    height: 100%;
   }
 }
-
 @media screen and (min-width: $bp-l) {
+  .main-navigation {
+    height: 100%;
+    align-items: center;
+    ul {
+      align-items: center;
+      height: 100%;
+    }
+  }
+
   .page_item {
+    // color: white;
     margin-left: 3vw;
   }
 }
