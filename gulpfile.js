@@ -7,7 +7,7 @@ const rename = require("gulp-rename");
 const cleanCSS = require("gulp-clean-css");
 
 // Local site URL //////////////////////////////////
-const localUrl = "http://lldesigns.test/";
+const localUrl = "http://example.test/";
 
 let localOptions = {
   proxy: localUrl,

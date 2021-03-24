@@ -27,7 +27,7 @@
 			<div class="flex">
 				<div class="site-branding">
 					<a href="/">
-						<img src="<?= _wp_upload_dir()['url']?>/isla_500x500.45702493_j5jbi33s-1.jpg" alt="" srcset="">
+						<img src="" alt="" srcset="">
 					</a>				
 				</div><!-- .site-branding -->
 				<div class="sidenav">
