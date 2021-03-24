@@ -31,7 +31,6 @@
 					</a>				
 				</div><!-- .site-branding -->
 				<div class="sidenav">
-			
 						<nav id="site-navigation" class="main-navigation flex">
 								<?php
 									wp_nav_menu(

@@ -1,8 +1,7 @@
-// @import url("https://use.typekit.net/gtf0uam.css");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@300;400;500;700&family=Sacramento&display=swap");
 
-$font-primary: proxima-nova, sans-serif; //, Helvetica, arial, sans-serif;
-$font-secondary: ""; //, Helvetica, arial, sans-serif;
-
+$font-primary: "Josefin Slab", serif; //, Helvetica, arial, sans-serif;
+$font-secondary: "Sacramento", cursive;
 $p-xl: 1.6rem;
 $p-large: 1.3rem;
 $p-small: 0.9rem;
@@ -11,7 +10,7 @@ $line-height: 1.8rem;
 
 body {
   color: $text-default;
-  font-weight: 400;
+  font-weight: 500;
   font-family: $font-primary;
 }
 

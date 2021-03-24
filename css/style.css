@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@300;400;500;700&family=Sacramento&display=swap");
 * {
 	margin: 0;
 	padding: 0;
@@ -249,8 +250,8 @@ footer {
 
 body {
 	color: #28354f;
-	font-weight: 400;
-	font-family: proxima-nova, sans-serif;
+	font-weight: 500;
+	font-family: "Josefin Slab", serif;
 }
 
 h1 {
@@ -722,7 +723,8 @@ section {
 .flex,
 .row-m,
 .row-s,
-.row-l {
+.row-l,
+.main-navigation ul {
 	display: flex;
 }
 
@@ -741,7 +743,9 @@ section {
 }
 
 @media screen and (max-width: 900px) {
-	.row-l {
+	
+	.row-l,
+	.main-navigation ul {
 		flex-direction: column;
 	}
 }
@@ -762,104 +766,31 @@ section {
 }
 
 /* Nav */
-.site-header .row {
-	justify-content: space-between;
+.site-header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
 	align-items: center;
 }
 
+.site-header .flex {
+	justify-content: space-between;
+}
+
+.main-navigation {
+	height: 100%;
+	align-items: center;
+}
+
+.main-navigation ul {
+	align-items: center;
+	height: 100%;
+}
+
 @media screen and (min-width: 900px) {
-	.header__nav .nav_link {
-		font-size: 1.3rem;
-		margin-left: 5vw;
-		color: #0030ff;
-		text-transform: capitalize;
-		font-weight: bold;
-		transition: color 0.2s;
-	}
-	.header__nav .nav_link--active {
-		pointer-events: none;
-		color: #0030ff;
-	}
-	.header__nav .nav_link a:hover {
-		text-decoration: none;
-	}
-	.header__nav .nav_link:hover {
-		transition: 0.2s;
-		color: #0030ff;
-	}
-}
-
-.sidenav {
-	max-width: 400px;
-	border-right: #333 solid 4px;
-	background-color: #0030ff;
-	font-size: 1.3rem;
-	padding: 2rem 0;
-}
-
-.sidenav .nav_link {
-	margin-left: auto;
-	text-align: right;
-	border-bottom: 1px solid #0030ff;
-	min-width: 200px;
-}
-
-.sidenav .nav_link a:hover {
-	padding-right: 1rem;
-	transition: 0.2s;
-}
-
-.sidenav .site-branding {
-	position: absolute;
-	bottom: 0;
-	right: 0;
-	z-index: 9999;
-	margin: 2rem 2rem;
-	display: block;
-	margin-left: auto;
-}
-
-@media screen and (max-width: 900px) {
-	.sidenav {
-		position: fixed;
-		overflow: hidden;
-		top: 0;
-		left: -9999px;
-		width: 0px;
-		height: 100%;
-		z-index: 9999;
-	}
-	.sidenav ul {
-		height: 100%;
-	}
-	.sidenav .nav_link {
-		color: #0030ff;
-		transition: 0.2s;
-	}
-	.sidenav .nav_link a {
-		padding: 2vh 0;
-		display: block;
-		text-decoration: none;
-	}
-	.sidenav .nav_link a:hover {
-		padding-right: 1rem;
-		transition: 0.2s;
-	}
-	.sidenav .nav_link:hover, .sidenav .nav_link--active {
-		color: white;
-		transition: 0.2s;
-	}
-	.sidenav-open .sidenav {
-		padding: 2rem 2rem;
-		left: 0;
-		width: 100%;
-		transition: width 0.5s, padding 0.5s;
-	}
-}
-
-@media screen and (max-width: 500px) {
-	.sidenav-open .sidenav {
-		padding: 5rem 2rem;
+	.page_item {
+		margin-left: 3vw;
 	}
 }
 
@@ -881,6 +812,18 @@ section {
 	#navicon {
 		display: none;
 	}
+}
+
+.site-branding {
+	max-width: 55px;
+}
+
+.site-branding a {
+	display: block;
+}
+
+.site-branding a img {
+	object-fit: contain;
 }
 
 /* banners */
@@ -1033,7 +976,7 @@ textarea {
 
 /* forms */
 .span-seconadary {
-	font-family: "";
+	font-family: "Sacramento", cursive;
 }
 
 .span-author {
@@ -1123,7 +1066,7 @@ textarea {
 
 .testimonial .open-quotes {
 	display: block;
-	font-family: proxima-nova, sans-serif;
+	font-family: "Josefin Slab", serif;
 	width: 55px;
 	height: 55px;
 	font-size: 8rem;
