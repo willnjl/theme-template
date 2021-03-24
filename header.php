@@ -27,12 +27,12 @@
 			<div class="flex">
 				<div class="site-branding">
 					<a href="/">
-						<img src="<?= get_template_directory_uri() ?>/uploads/2021/03/isla_500x500.45702493_j5jbi33s.jpg" alt="" srcset="">
-					</a>
+						<img src="<?= _wp_upload_dir()['url']?>/isla_500x500.45702493_j5jbi33s-1.jpg" alt="" srcset="">
+					</a>				
 				</div><!-- .site-branding -->
 				<div class="sidenav">
-					<div class="header__nav">
-						<nav id="site-navigation" class="main-navigation">
+			
+						<nav id="site-navigation" class="main-navigation flex">
 								<?php
 									wp_nav_menu(
 										array(
@@ -42,17 +42,14 @@
 										);
 									?>
 						</nav>
-					</div> <!-- header nav -->
 				</div><!-- sidenav -->
-				<div class="navicon-container header-pad">
-						<button class="hamburger hamburger--squeeze" type="button" id="navicon">
-							<div class="container">
-								<span class="hamburger-box">
-									<span class="hamburger-inner"></span>
-								</span>
-							</div>
-						</button>
-				</div><!-- navicon -->
+				<button class="hamburger hamburger--squeeze" type="button" id="navicon">
+					<div class="container">
+						<span class="hamburger-box">
+							<span class="hamburger-inner"></span>
+						</span>
+					</div>
+				</button>
 			</div><!--flex -->
 		</div> <!-- wrap -->
 		<div class="bg-img" id="nav-mask"></div>
