@@ -23,38 +23,37 @@
 <body class="">
 	<div id="page" class="site">
 	<header id="masthead" class="site-header header-pad">
-		<div class="wrap nav-bar ">
-			<div class="site-branding">
-				<?php get_template_part( 'template-parts/component', 'logo',  ); ?>
-			</div><!-- .site-branding -->
-			 
-			<div class="sidenav">
-				<div class="wrap">
-					<nav id="site-navigation" class="main-navigation">
-						<?php
-							wp_nav_menu(
-								array(
-									'theme_location' => 'menu-1',
-									'menu_id'        => 'primary-menu',
-									)
-								);
-						?>
-					</nav><!-- #site-navigation -->
-								<!-- additonal Info -->
-				</div>
-			</div>
-			<div class="navicon-container header-pad">
-					<div class="wrap">
-					<button class="hamburger hamburger--squeeze" type="button" id="navicon">
-						<div class="container">
-							<span class="hamburger-box">
-								<span class="hamburger-inner"></span>
-							</span>
-						</div>
-					</button>
-				</div>
-				</div>
-		</div>
+		<div class="wrap">
+			<div class="flex">
+				<div class="site-branding">
+					<a href="/">
+						<img src="<?= get_template_directory_uri() ?>/uploads/2021/03/isla_500x500.45702493_j5jbi33s.jpg" alt="" srcset="">
+					</a>
+				</div><!-- .site-branding -->
+				<div class="sidenav">
+					<div class="header__nav">
+						<nav id="site-navigation" class="main-navigation">
+								<?php
+									wp_nav_menu(
+										array(
+											'theme_location' => 'menu-1',
+											'menu_id'        => 'primary-menu',
+											)
+										);
+									?>
+						</nav>
+					</div> <!-- header nav -->
+				</div><!-- sidenav -->
+				<div class="navicon-container header-pad">
+						<button class="hamburger hamburger--squeeze" type="button" id="navicon">
+							<div class="container">
+								<span class="hamburger-box">
+									<span class="hamburger-inner"></span>
+								</span>
+							</div>
+						</button>
+				</div><!-- navicon -->
+			</div><!--flex -->
+		</div> <!-- wrap -->
 		<div class="bg-img" id="nav-mask"></div>
-
 	</header><!-- #masthead -->
