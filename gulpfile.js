@@ -5,9 +5,13 @@ const reload = browserSync.reload;
 const autoprefixer = require("gulp-autoprefixer");
 const rename = require("gulp-rename");
 const cleanCSS = require("gulp-clean-css");
+const uglify = require("gulp-uglify");
+var concat = require("gulp-concat");
 
 // Local site URL //////////////////////////////////
-const localUrl = "http://example.test/";
+let local = true;
+
+const localUrl = "www.example.test/";
 
 let localOptions = {
   proxy: localUrl,
@@ -18,33 +22,38 @@ let staticOptions = {
     baseDir: "./",
   },
 };
-
 ///////////////.//////////////////////////////////
 
 task("browser-sync", (cb) => {
-  browserSync.init(localOptions);
+  browserSync.init(local ? localOptions : staticOptions);
 
   cb();
 });
 
 task("clean-css", () => {
   return gulp
-    .src("./css/style.css")
+    .src("./style.css")
     .pipe(autoprefixer())
     .pipe(rename({ suffix: ".min" }))
     .pipe(cleanCSS({ compatibility: "ie8" }))
-    .pipe(dest("./css/"));
+    .pipe(dest("./"));
 });
 
 let browserReload = (cb) => {
   reload();
   cb();
 };
-
+task("compressJs", () => {
+  return gulp
+    .src("./js/lib/**/*.js")
+    .pipe(concat("all.min.js"))
+    .pipe(uglify())
+    .pipe(dest("./js/dist"));
+});
 task("watcher", () => {
   watch("./**/*.php", browserReload);
-  watch("./**/*.js", browserReload);
-  watch("./css/style.css", series("clean-css", browserReload));
+  watch("./js/lib/**/*.js", series("compressJs", browserReload));
+  watch("./style.css", series("clean-css", browserReload));
 });
 
 task("default", series("browser-sync", "watcher"));

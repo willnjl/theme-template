@@ -17,5 +17,9 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "gulp-concat": "^2.6.1",
+    "gulp-uglify": "^3.0.2"
+  }
 }

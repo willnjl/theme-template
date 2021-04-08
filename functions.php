@@ -143,14 +143,9 @@ function fiteenten_scripts() {
 	wp_enqueue_style( 'fiteenten-style', get_template_directory_uri().'/css/style.min.css', array(), _S_VERSION );
 	wp_style_add_data( 'fiteenten-style', 'rtl', 'replace' );
 	
-	wp_enqueue_script( 'fiteenten-app', get_template_directory_uri() . '/js/app.js', array(), _S_VERSION, true );
-	wp_enqueue_script( 'fiteenten-intersection-observers', get_template_directory_uri() . '/js/intersection-observers.js', array(), _S_VERSION, true );
-	wp_enqueue_script( 'fiteenten-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
-	wp_enqueue_script( 'fiteenten-carousels', get_template_directory_uri() . '/js/carousels.js', array(), _S_VERSION, true );
-	wp_enqueue_script( 'fiteenten-style-switcher', get_template_directory_uri() . '/js/style-switcher.js', array(), _S_VERSION, true );
+	wp_enqueue_script( 'fiteenten-app', get_template_directory_uri() . '/js/dist/all.min.js', array(), _S_VERSION, true );
 	// packages
 	// wp_enqueue_script( 'fiteenten-chocolat', get_template_directory_uri() . '/js/chocolat.js', array(), _S_VERSION, true );
-	wp_enqueue_script( 'fiteenten-parallax.min', get_template_directory_uri() . '/js/parallax.min.js', array(), _S_VERSION, true );
 	wp_enqueue_style( 'fiteenten-swiper-style', 'https://unpkg.com/swiper/swiper-bundle.min.css', array(), _S_VERSION );
 	wp_enqueue_script( 'fiteenten-swiper-js', 'https://unpkg.com/swiper/swiper-bundle.min.js', array(), _S_VERSION );
 
