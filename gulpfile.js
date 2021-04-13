@@ -32,11 +32,11 @@ task("browser-sync", (cb) => {
 
 task("clean-css", () => {
   return gulp
-    .src("./style.css")
+    .src("./css/style.css")
     .pipe(autoprefixer())
     .pipe(rename({ suffix: ".min" }))
     .pipe(cleanCSS({ compatibility: "ie8" }))
-    .pipe(dest("./"));
+    .pipe(dest("./css/"));
 });
 
 let browserReload = (cb) => {
@@ -53,7 +53,7 @@ task("compressJs", () => {
 task("watcher", () => {
   watch("./**/*.php", browserReload);
   watch("./js/lib/**/*.js", series("compressJs", browserReload));
-  watch("./style.css", series("clean-css", browserReload));
+  watch("./css/style.css", series("clean-css", browserReload));
 });
 
 task("default", series("browser-sync", "watcher"));
