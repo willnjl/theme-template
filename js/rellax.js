@@ -5,7 +5,7 @@ let Rellax = require("rellax");
 
     if (w.matchMedia("(min-width: 600px)").matches) {
       rellax = new Rellax(".rellax", {
-        center: true,
+        centering: true,
       });
     }
 
@@ -18,7 +18,7 @@ let Rellax = require("rellax");
           rellax.refresh();
         } else {
           rellax = new Rellax(".rellax", {
-            center: true,
+            centering: true,
           });
         }
       }
