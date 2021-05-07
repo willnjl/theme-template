@@ -908,21 +908,11 @@ section {
 	height: 500px;
 }
 
-.hero__heading {
-	text-align: center;
-	color: white;
-}
-
 .hero {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	height: 500px;
-}
-
-.hero__heading {
-	text-align: center;
-	color: white;
 }
 
 /* buttons */
