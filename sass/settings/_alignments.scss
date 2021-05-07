@@ -2,6 +2,18 @@ $padding: 6rem 6vw;
 $wrap-width-large: 1220px;
 $wrap-width-small: 900px;
 
+.wrap {
+  max-width: $wrap-width-large;
+  margin: 0 auto;
+  position: relative;
+}
+
+.wrap-tight {
+  max-width: $wrap-width-small;
+  margin: 0 auto;
+  position: relative;
+}
+
 $nav-height: 95px;
 
 $bp-xl: 1200px;

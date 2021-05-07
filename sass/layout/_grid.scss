@@ -1,0 +1,19 @@
+.grid {
+  // Fallback
+  display: flex;
+  flex-direction: column;
+}
+
+.grid {
+  display: grid;
+}
+@media screen and (max-width: $bp-l) {
+  .row-l {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: $bp-m) {
+  .grid {
+    display: flex;
+  }
+}
