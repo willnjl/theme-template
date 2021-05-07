@@ -3,10 +3,11 @@ let Rellax = require("rellax");
   if (d.querySelector(".rellax")) {
     let rellax = false;
 
+    const options = {
+      centering: true,
+    };
     if (w.matchMedia("(min-width: 600px)").matches) {
-      rellax = new Rellax(".rellax", {
-        centering: true,
-      });
+      rellax = new Rellax(".rellax", options);
     }
 
     let removeRellax = (w, rellax) => {
@@ -17,9 +18,7 @@ let Rellax = require("rellax");
         if (rellax) {
           rellax.refresh();
         } else {
-          rellax = new Rellax(".rellax", {
-            centering: true,
-          });
+          rellax = new Rellax(".rellax", options);
         }
       }
     };
