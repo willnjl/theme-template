@@ -8,13 +8,14 @@
 }
 
 .flex-center {
-  display: flex;
   justify-content: center;
   align-items: center;
 }
 .flex-align-center {
-  display: flex;
   align-items: center;
+}
+.flex-justify-center {
+  justify-content: center;
 }
 .flex-col {
   display: flex;
