@@ -18,8 +18,13 @@ get_header();
 ?>
 
 	<main id="primary" class="site-main">
-	<section>
-       <h1>It is working <span class="fa fa-wine-glass"></span>
+	<section class="hero">
+		<img src="<?= bloginfo('template_url') ; ?>/assets/home-banner.jpg" alt="" class="bg-img">
+		<div class="wrap h-max">
+			<div class="flex flex-align-center h-max">
+				<h1 class="w-half white">Lorem ipsum dolor sit amet consectatur amulket</h1>
+			</div>
+		</div>
 	   </h1> 
 	</section>
 	</main><!-- #main -->

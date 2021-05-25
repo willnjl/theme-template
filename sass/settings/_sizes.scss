@@ -1,3 +1,13 @@
 .h-max {
   height: 100%;
 }
+
+.w-half {
+  width: 50%;
+}
+
+@media screen and (max-width: $bp-m) {
+  .w-half {
+    width: 75%;
+  }
+}
