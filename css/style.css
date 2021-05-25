@@ -257,6 +257,12 @@ footer {
 	}
 }
 
+@media screen and (max-width: 500px) {
+	.w-half {
+		width: 90%;
+	}
+}
+
 :root {
 	background-color: white;
 }

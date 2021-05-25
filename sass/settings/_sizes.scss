@@ -11,3 +11,9 @@
     width: 75%;
   }
 }
+
+@media screen and (max-width: $bp-s) {
+  .w-half {
+    width: 90%;
+  }
+}
