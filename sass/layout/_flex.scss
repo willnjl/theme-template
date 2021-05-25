@@ -38,8 +38,6 @@
 @media screen and (max-width: $bp-xl) {
   .row-xl {
     flex-direction: column;
-  }
-  .row-xl {
     .col {
       width: 100%;
     }
@@ -51,6 +49,9 @@
     .col {
       width: 100%;
     }
+    .align-right {
+      text-align: left;
+    }
   }
 }
 @media screen and (max-width: $bp-m) {
@@ -59,6 +60,9 @@
     .col {
       width: 100%;
     }
+    .align-right {
+      text-align: left;
+    }
   }
 }
 @media screen and (max-width: $bp-s) {
@@ -66,6 +70,9 @@
     flex-direction: column;
     .col {
       width: 100%;
+    }
+    .align-right {
+      text-align: left;
     }
   }
 }
