@@ -64,13 +64,13 @@ body {
   font-size: 18px;
 }
 
-@media screen and (max-width: $btext-m) {
+@media screen and (max-width: $bp-m) {
   html,
   body {
     font-size: 17px;
   }
 }
-@media screen and (max-width: $btext-s) {
+@media screen and (max-width: $bp-s) {
   html,
   body {
     font-size: 16px;

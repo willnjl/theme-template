@@ -196,3 +196,4 @@ function alter_sfquery( $query_args, $sfid ) {
 	return $query_args;
 }
 add_filter( 'sf_edit_query_args', 'alter_sfquery', 20, 2 );
+add_filter('wpcf7_autop_or_not', '__return_false'); 
