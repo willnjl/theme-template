@@ -577,13 +577,17 @@ hr {
 	content: "\f0da";
 }
 
+.fa-wine-glass:before {
+	content: "\f4e3";
+}
+
 @font-face {
 	font-family: "Font Awesome 5 Free";
 	font-style: normal;
 	font-weight: 900;
 	font-display: block;
-	src: url("webfonts/fa-solid-900.eot");
-	src: url("webfonts/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("webfonts/fa-solid-900.woff2") format("woff2"), url("webfonts/fa-solid-900.woff") format("woff"), url("webfonts/fa-solid-900.ttf") format("truetype"), url("webfonts/fa-solid-900.svg#fontawesome") format("svg");
+	src: url("../assets/fonts/webfonts/fa-solid-900.eot");
+	src: url("../assets/fonts/webfonts/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/webfonts/fa-solid-900.woff2") format("woff2"), url("../assets/fonts/webfonts/fa-solid-900.woff") format("woff"), url("../assets/fonts/webfonts/fa-solid-900.ttf") format("truetype"), url("../assets/fonts/webfonts/fa-solid-900.svg#fontawesome") format("svg");
 }
 
 .fa,

@@ -11,7 +11,7 @@ var concat = require("gulp-concat");
 // Local site URL //////////////////////////////////
 let local = true;
 
-const localUrl = "www.example.test/";
+const localUrl = "http://castlehill.local/";
 
 let localOptions = {
   proxy: localUrl,

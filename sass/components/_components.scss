@@ -20,11 +20,10 @@
 // typography
 @import "typography/spans";
 @import "typography/utilities";
-@import "typography/wysiwyg";
+
+@import "text-blocks/wysiwyg";
 
 @import "shapes/shapes";
-@import "text-blocks/text-blocks";
 
 @import "media/media";
-
-@import "loops/loops";
+@import "media/icons";
