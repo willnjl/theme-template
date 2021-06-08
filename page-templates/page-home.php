@@ -22,7 +22,7 @@ get_header();
 		<img src="<?= bloginfo('template_url') ; ?>/assets/home-banner.jpg" alt="" class="bg-img">
 		<div class="wrap h-max">
 			<div class="flex flex-align-center h-max">
-				<h1 class="w-half white">Lorem ipsum dolor sit amet consectatur amulket</h1>
+				<h1 class="w-half ">Lorem ipsum dolor sit amet consectatur amulket <i class="fa fa-wine-glass"></i></h1>
 			</div>
 		</div>
 	   </h1> 
