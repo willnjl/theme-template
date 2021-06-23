@@ -1,10 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@300;400;500;700&family=Sacramento&display=swap");
+@import url("https://use.typekit.net/kbt5rwb.css");
 
-$font-primary: "Josefin Slab", serif; //, Helvetica, arial, sans-serif;
-$font-secondary: "Sacramento", cursive;
-$p-xl: 1.6rem;
-$p-large: 1.3rem;
-$p-small: 0.9rem;
+$font-primary: rajdhani, sans-serif; //, Helvetica, arial, sans-serif;
+$font-secondary: arial, cursive;
+$text-head: 4rem;
+$text-xl: 1.6rem;
+$text-large: 1.3rem;
+$text-small: 0.9rem;
 
 $line-height: 1.8rem;
 
@@ -76,14 +77,17 @@ body {
   }
 }
 
-.p-l {
-  font-size: $p_large;
+.text-head {
+  font-size: $text-head;
+}
+.text-xl {
+  font-size: $text-xl;
+}
+.text-l {
+  font-size: $text-large;
   line-height: 2.1rem;
 }
-.p-xl {
-  font-size: $p_xl;
-}
-.p-s {
+.text-s {
   font-size: 0.75rem;
 }
 

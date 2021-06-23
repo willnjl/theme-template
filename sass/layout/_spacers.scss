@@ -9,3 +9,49 @@
 .pad-top {
   padding-top: 2rem;
 }
+
+.p-2 {
+  padding: 2rem;
+}
+
+.py-2 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.px-2 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.pt-2 {
+  padding-top: 2rem;
+}
+.pb-2 {
+  padding-right: 2rem;
+}
+
+@media screen and (max-width: $bp-xl) {
+  .xl-px-0 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media screen and (max-width: $bp-l) {
+  .l-px-0 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media screen and (max-width: $bp-m) {
+  .m-px-0 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+@media screen and (max-width: $bp-s) {
+  .s-px-0 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
