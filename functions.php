@@ -196,7 +196,6 @@ function alter_sfquery( $query_args, $sfid ) {
 	return $query_args;
 }
 add_filter( 'sf_edit_query_args', 'alter_sfquery', 20, 2 );
-<<<<<<< HEAD
 
 function acf_responsive_img($image_id,$image_size,$max_width){
 
@@ -215,7 +214,3 @@ function acf_responsive_img($image_id,$image_size,$max_width){
 	}
 }
 
-?>		
-=======
-add_filter('wpcf7_autop_or_not', '__return_false'); 
->>>>>>> 54f36fa150cb0e9c9c6c9c49d40c78f130454115
