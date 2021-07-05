@@ -51,7 +51,7 @@ task("compressJs", () => {
     .pipe(dest("./js/dist"));
 });
 task("watcher", () => {
-  watch("./**/*.php", browserReload);
+  watch(["./**/*.php", "!./node_modules"], browserReload);
   watch("./js/lib/**/*.js", series("compressJs", browserReload));
   watch("./css/style.css", series("clean-css", browserReload));
 });
