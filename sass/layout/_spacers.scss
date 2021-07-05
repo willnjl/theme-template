@@ -29,29 +29,25 @@
   padding-right: 2rem;
 }
 
-@media screen and (max-width: $bp-xl) {
-  .xl-px-0 {
-    padding-left: 0;
-    padding-right: 0;
+@media screen and (max-width: $bp-l) {
+  .row-l {
+    .col {
+      margin-right: 0;
+    }
   }
 }
-
-@media screen and (max-width: $bp-l) {
-  .l-px-0 {
-    padding-left: 0;
-    padding-right: 0;
+@media screen and (max-width: $bp-m) {
+  .row-m {
+    .col {
+      margin-right: 0;
+    }
   }
 }
 
 @media screen and (max-width: $bp-m) {
-  .m-px-0 {
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-@media screen and (max-width: $bp-s) {
-  .s-px-0 {
-    padding-left: 0;
-    padding-right: 0;
+  .row-s {
+    .col {
+      margin-right: 0;
+    }
   }
 }
