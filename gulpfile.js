@@ -9,10 +9,15 @@ const uglify = require("gulp-uglify");
 const sass = require("gulp-sass")(require("sass"));
 var concat = require("gulp-concat");
 
-// Local site URL //////////////////////////////////
-let local = true;
+///////////////////////////////////////////////////
 
-const localUrl = "starter-theme.local";
+// Settings
+
+let local = true; // static or local project ?;
+
+const localUrl = "starter-theme.local"; // Local Site Url
+
+//////////////////////////////////////////////////
 
 let localOptions = {
   proxy: localUrl,
@@ -23,7 +28,6 @@ let staticOptions = {
     baseDir: "./",
   },
 };
-///////////////.//////////////////////////////////
 
 task("browser-sync", (cb) => {
   browserSync.init(local ? localOptions : staticOptions);
