@@ -6,12 +6,13 @@ const autoprefixer = require("gulp-autoprefixer");
 const rename = require("gulp-rename");
 const cleanCSS = require("gulp-clean-css");
 const uglify = require("gulp-uglify");
+const sass = require("gulp-sass")(require("sass"));
 var concat = require("gulp-concat");
 
 // Local site URL //////////////////////////////////
 let local = true;
 
-const localUrl = "http://castlehill.local/";
+const localUrl = "starter-theme.local";
 
 let localOptions = {
   proxy: localUrl,
@@ -28,6 +29,13 @@ task("browser-sync", (cb) => {
   browserSync.init(local ? localOptions : staticOptions);
 
   cb();
+});
+
+task("compile-css", () => {
+  return gulp
+    .src("sass/**/*scss")
+    .pipe(sass.sync().on("error", sass.logError))
+    .pipe(dest("./css"));
 });
 
 task("clean-css", () => {
@@ -51,6 +59,7 @@ task("compressJs", () => {
     .pipe(dest("./js/dist"));
 });
 task("watcher", () => {
+  watch("sass/**/*.scss", series("compile-css"));
   watch(["./**/*.php", "!./node_modules"], browserReload);
   watch("./js/lib/**/*.js", series("compressJs", browserReload));
   watch("./css/style.css", series("clean-css", browserReload));
