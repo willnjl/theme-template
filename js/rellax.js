@@ -1,29 +1,32 @@
-let Rellax = require("rellax");
 ((d, w) => {
+  let Rellax = require("rellax");
   if (d.querySelector(".rellax")) {
-    let rellax = false;
-
     const options = {
-      centering: true,
+      speed: -3,
+      center: true,
+      // round: true,
     };
-    if (w.matchMedia("(min-width: 600px)").matches) {
-      rellax = new Rellax(".rellax", options);
-    }
 
-    let removeRellax = (w, rellax) => {
-      if (w.matchMedia("(max-width: 600px)").matches) {
+    let rellax = new Rellax(".rellax", options);
+
+    let isSmall = (w) => w.matchMedia("(max-width: 600px)").matches;
+
+    w.addEventListener("resize", () => {
+      console.log(isSmall(w));
+      if (isSmall(w)) {
         rellax.destroy();
-        rellaxExists = false;
       } else {
-        if (rellax) {
-          rellax.refresh();
-        } else {
-          rellax = new Rellax(".rellax", options);
-        }
+        rellax.refresh();
       }
-    };
-
-    w.addEventListener("resize", () => removeRellax(w, rellax));
-    w.addEventListener("load", () => removeRellax(w, rellax));
+    });
+    w.addEventListener(
+      "load",
+      () => {
+        if (isSmall(w)) {
+          rellax.destroy();
+        }
+      },
+      false
+    );
   }
 })(document, window);
